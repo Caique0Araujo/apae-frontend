@@ -3,6 +3,7 @@ import ButtonComponent from "../components/button-component/button-component";
 import MenuBarComponent from "../components/menu-bar-component/menu-bar-component";
 import OutlinedButtonComponent from "../components/outlined-button-component/outlined-button-component";
 import bazar from '../../assets/images/bazar.png';
+import '../../css/DefaultStyle.min.css';
 
 function Bazar() {
     return (
@@ -15,7 +16,7 @@ function Bazar() {
                         <img src={bazar} height={450}/>
                     </Col>
                     <Col style={{marginTop: 75}}>
-                        <h2 style={{fontSize: 65, textAlign: 'right', color: '#666666', fontWeight: 500}}>Conheça o bazar da APAE</h2>
+                        <h2 className='title' style={{textAlign: 'right'}}>Conheça o bazar da APAE</h2>
                         <p style={{fontSize: 16, textAlign: 'right', color: '#666666', marginBlock: 28, fontWeight: 300}}>Falar como funciona o bazar, como começou talvez. Falar como doar e como comprar. Accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In </p>
                     
                         <Row style={{justifyContent: 'space-between'}}>
