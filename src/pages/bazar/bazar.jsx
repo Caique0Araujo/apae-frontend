@@ -17,7 +17,7 @@ function Bazar() {
                     </Col>
                     <Col style={{marginTop: 75}}>
                         <h2 className='title' style={{textAlign: 'right'}}>Conheça o bazar da APAE</h2>
-                        <p style={{fontSize: 16, textAlign: 'right', color: '#666666', marginBlock: 28, fontWeight: 300}}>Falar como funciona o bazar, como começou talvez. Falar como doar e como comprar. Accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In </p>
+                        <p className="subtitle" style={{textAlign: 'right', marginBlock: 28}}>Falar como funciona o bazar, como começou talvez. Falar como doar e como comprar. Accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In </p>
                     
                         <Row style={{justifyContent: 'space-between'}}>
                             <OutlinedButtonComponent text='Doar'/>
