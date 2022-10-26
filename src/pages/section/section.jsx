@@ -1,8 +1,16 @@
 import {Container, Row, Col, Image} from 'react-bootstrap';
-import sectionImage from '../../../public/health-section.svg';
+import sectionImage from '../../assets/images/health-section.svg';
 import MenuBarComponent from '../components/menu-bar-component/menu-bar-component';
 
-const subsection = ['psicologia', 'fisioterapia'];
+
+const psychology = {
+  title: 'Psicologia',
+  subtitle: '',
+  text: '',
+  image: ''
+}
+
+const subsection = [psychology];
 
 
 const Section = (props) => {
@@ -12,7 +20,7 @@ const Section = (props) => {
       <Container style={{margin: 0, padding: 0}} fluid>
         <Row style={{padding: 0, width: '100%', margin: 0}}>
           <Col style={{ width: '70%', marginLeft: '7%', padding: 20, backgroundImage: "linear-gradient(to right, #FFFFFF, #DFE9E8)", display: 'flex', alignItems: 'center'}} >
-          <h1 style={{color: "rgba(102, 102, 102, 1) "}}>
+          <h1 style={{color: "rgba(102, 102, 102, 1) ", fontSize: 70, textAlign: 'left'}}>
             Setor de {props.name} da APAE SJE
           </h1>
           </Col>
@@ -22,7 +30,7 @@ const Section = (props) => {
         </Row>
         {subsection.map((section) => {
           return (<Row>
-            <Col style={{padding: 20}}>Setor de {section}</Col>
+            <Col style={{padding: 20}}>Setor de {section.title}</Col>
             <Col></Col>
           </Row>)
         })}
