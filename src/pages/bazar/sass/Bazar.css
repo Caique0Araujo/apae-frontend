@@ -1,0 +1,25 @@
+.row-card {
+  justify-content: space-between;
+}
+
+.title-card {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.description-card {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 70px;
+  font-weight: 300;
+}
+
+.title-card.right, .description-card.right, .title.right, .subtitle.right {
+  text-align: right;
+}
+
+.subtitle.right {
+  margin-block: 28px;
+}/*# sourceMappingURL=Bazar.css.map */
