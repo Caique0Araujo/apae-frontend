@@ -1,23 +1,51 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import ButtonComponent from "../components/button-component/button-component";
 import MenuBarComponent from "../components/menu-bar-component/menu-bar-component";
 import OutlinedButtonComponent from "../components/outlined-button-component/outlined-button-component";
 import bazar from '../../assets/images/bazar.png';
 import '../../css/DefaultStyle.min.css';
+import './css/Bazar.min.css';
+import VariableWidthGrid from "react-variable-width-grid";
+import { IntlProvider, FormattedNumber } from "react-intl";
+
+const products = [
+    { img: "", id: 1, title: "Produto 0", price: 0.50 },
+    { img: "", id: 2, title: "Produto 1", price: 1.50 },
+    { img: "", id: 3, title: "Produto 2", price: 2.50 },
+    { img: "", id: 4, title: "Produto 3", price: 3.50 },
+    { img: "", id: 5, title: "Produto 4", price: 4.50 },
+    { img: "", id: 6, title: "Produto 5", price: 5.50 },
+    { img: "", id: 7, title: "Produto 6", price: 6.50 }
+];
 
 function Bazar() {
+    const items = products.map((v, _) => {
+        return (
+            <Card key={v.id} style={{width: 200, marginBottom: 50}}>
+                <Card.Img variant="top" src={bazar} height={125} style={{objectFit: 'cover'}}/>
+                <Card.Body style={{textAlign: 'center'}}>
+                    <Card.Title style={{fontWeight: 500, color: '#666666'}}>{v.title}</Card.Title>
+                    <Card.Text style={{fontWeight: 300, color: '#666666'}}>
+                        <IntlProvider>
+                            <FormattedNumber value={v.price} style='currency' currency="BRL"/>
+                        </IntlProvider>
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+        );
+    });
     return (
         <div>
             <MenuBarComponent/>
 
-            <Container>
-                <Row style={{marginTop: 32, marginBottom: 100}}>
+            <Container style={{marginTop: 32, marginBottom: 100}}>
+                <Row>
                     <Col>
                         <img src={bazar} height={450}/>
                     </Col>
                     <Col style={{marginTop: 75}}>
-                        <h2 className='title' style={{textAlign: 'right'}}>Conheça o bazar da APAE</h2>
-                        <p className="subtitle" style={{textAlign: 'right', marginBlock: 28}}>Falar como funciona o bazar, como começou talvez. Falar como doar e como comprar. Accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In </p>
+                        <h2 className='title right'>Conheça o bazar<br/>da APAE</h2>
+                        <p className="subtitle right">Falar como funciona o bazar, como começou talvez. Falar como doar e como comprar. Accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In </p>
                     
                         <Row style={{justifyContent: 'space-between'}}>
                             <OutlinedButtonComponent text='Doar'/>
@@ -27,30 +55,50 @@ function Bazar() {
                 </Row>
             </Container>
 
-            <Container>
-                <Row style={{justifyContent: 'space-between'}}>
+            <Container style={{marginTop: 32, marginBottom: 100}}>
+                <Row className="row-card">
                     <Col xs={4}>
-                        <h4 style={{fontSize: 18, color: '#666666'}}>Como doar algo para o bazar?</h4>
-                        <p style={{fontSize: 14, color: '#666666'}}>Dizer aqui como deve ser feita a doação.<br/>eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. </p>
+                        <h4 className="title-card">Como doar algo para o bazar?</h4>
+                        <p className="description-card">Dizer aqui como deve ser feita a doação.<br/>eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. </p>
                     </Col>
 
                     <Col xs={4}>
-                        <h4 style={{textAlign: 'right', fontSize: 18, color: '#666666'}}>O que posso doar?</h4>
-                        <p style={{textAlign: 'right', fontSize: 14, color: '#666666'}}>Dizer aqui quais tipos de coisas podem ser doadas.<br/>eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. </p>
+                        <h4 className="title-card right">O que posso doar?</h4>
+                        <p className="description-card right">Dizer aqui quais tipos de coisas podem ser doadas.<br/>eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. </p>
                     </Col>
                 </Row>
 
-                <Row style={{justifyContent: 'space-between'}}>
+                <Row className="row-card">
                     <Col xs={4}>
-                        <h4 style={{fontSize: 18, color: '#666666'}}>Qual o local para fazer a doação?</h4>
-                        <p style={{fontSize: 14, color: '#666666'}}>Dizer aqui o local para fazer a doação<br/>eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. </p>
+                        <h4 className="title-card">Qual o local para fazer a doação?</h4>
+                        <p className="description-card">Dizer aqui o local para fazer a doação<br/>eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. </p>
                     </Col>
 
                     <Col xs={4}>
-                        <h4 style={{textAlign: 'right', fontSize: 18, color: '#666666'}}>Qualquer outra informação relevante</h4>
-                        <p style={{textAlign: 'right', fontSize: 14, color: '#666666'}}>eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. </p>
+                        <h4 className="title-card right">Qualquer outra informação relevante</h4>
+                        <p className="description-card right">eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. </p>
                     </Col>
                 </Row>
+
+                <Row className="row-card">
+                    <Col style={{maxWidth: 320}}>
+                        <h4 className="title-card">Qualquer outra informação relevante</h4>
+                        <p className="description-card">eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum.</p>
+                    </Col>
+
+                    <Col xs={4}>
+                        <h4 className="title-card right">Qualquer outra informação relevante</h4>
+                        <p className="description-card right">eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. </p>
+                    </Col>
+                </Row>
+            </Container>
+
+            <Container style={{marginTop: 32, marginBottom: 100}}>
+                <Row style={{textAlign: 'center'}}>
+                    <h3>Produtos do bazar</h3>
+                </Row>
+
+                <VariableWidthGrid columnGap={60}>{items}</VariableWidthGrid>
             </Container>
         </div>
     );
