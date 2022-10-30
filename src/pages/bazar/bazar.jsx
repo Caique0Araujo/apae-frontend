@@ -7,6 +7,7 @@ import '../../css/DefaultStyle.min.css';
 import './css/Bazar.min.css';
 import VariableWidthGrid from "react-variable-width-grid";
 import { ItemGridComponent } from "./components/item-grid-component";
+import FooterBaseComponent from "../components/footer-base-component/footer-base-component";
 
 const products = [
     { img: "", id: 1, title: "Produto 0", price: 0.50 },
@@ -92,7 +93,7 @@ function Bazar() {
                 </VariableWidthGrid>
             </Container>
 
-            <footer></footer>
+            <FooterBaseComponent/>
         </div>
     );
 }
