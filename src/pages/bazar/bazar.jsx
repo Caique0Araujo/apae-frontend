@@ -24,16 +24,16 @@ function Bazar() {
         <div>
             <MenuBarComponent/>
 
-            <Container style={{marginTop: 32, marginBottom: 100}}>
+            <Container className='section-page'>
                 <Row>
                     <Col>
                         <img src={bazar}/>
                     </Col>
-                    <Col style={{marginTop: 75}}>
+                    <Col className='title-col'>
                         <h2 className='title right'>Conheça o bazar<br/>da APAE</h2>
                         <p className="subtitle right">Falar como funciona o bazar, como começou talvez. Falar como doar e como comprar. Accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In </p>
                     
-                        <Row style={{justifyContent: 'space-between'}}>
+                        <Row className='row-buttons'>
                             <OutlinedButtonComponent text='Doar'/>
                             <ButtonComponent text='Comprar'/>
                         </Row>
@@ -41,7 +41,7 @@ function Bazar() {
                 </Row>
             </Container>
 
-            <Container style={{marginTop: 32, marginBottom: 100}}>
+            <Container className='section-page'>
                 <Row className="row-card">
                     <Col xs={4}>
                         <h4 className="title-card">Como doar algo para o bazar?</h4>
@@ -67,7 +67,7 @@ function Bazar() {
                 </Row>
 
                 <Row className="row-card">
-                    <Col style={{maxWidth: 320}}>
+                    <Col xs={4}>
                         <h4 className="title-card">Qualquer outra informação relevante</h4>
                         <p className="description-card">eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum.</p>
                     </Col>
@@ -79,12 +79,12 @@ function Bazar() {
                 </Row>
             </Container>
 
-            <Container style={{marginTop: 32, marginBottom: 100}}>
-                <Row style={{textAlign: 'center'}}>
-                    <h3 style={{fontWeight: 500, color: '#666666', fontSize: 35}}>Produtos do bazar</h3>
+            <Container className='section-page'>
+                <Row className='grid-row'>
+                    <h3 className='grid-title'>Produtos do bazar</h3>
                 </Row>
 
-                <VariableWidthGrid columnGap={60} style={{marginTop: 30}}>
+                <VariableWidthGrid className='grid' columnGap={60}>
                     {
                         products.map((val, _) => 
                             <ItemGridComponent id={val.id} img={val.img} price={val.price} title={val.title}/>
