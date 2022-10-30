@@ -1,39 +1,37 @@
-import {Container, Row, Col, Image} from 'react-bootstrap';
-
-
-
+import {Row, Col, Image} from 'react-bootstrap';
+import '../../../css/DefaultStyle.min.css';
+import '../css/subSection.min.css';
 
 const SubSection = (props) => {
 
   const section = props.section
   const order = props.side % 2 == 0 ? 'first' : 'last'
-  const textAlign = props.side % 2 == 0 ? 'initial' : 'end'
+  const textAlign = props.side % 2 == 0 ? 'end' : 'initial'
 
   return (
-    <Row style={{padding: 0, margin: '0 0 4% 0'}} >
-      <Col md={5} xs={{order}} style={{padding: 0, margin: 0}}>
+    <Row className='sub-section-container' >
+      <Col className='image-column' md={5} xs={{order}}>
         <Image src={section.image}  width={560} height={808.5} />
       </Col>
-      <Col style={{padding: '0% 5%', color:  "rgba(102, 102, 102, 1)" }}>
-        <Row style={{marginTop: '25%'}}>
-          <Row style={{}}>
+      <Col className='top-column'>
+        <Row className='top-row'>
+          <Row className='title-row'>
             <h1 style={{ fontSize: 48, fontWeight: '500', textAlign: textAlign  }}>
               {section.title}
             </h1>
           </Row>
-          <Row style={{marginTop: "20%"}}>
+          <Row className='sub-title-row'>
             <h5 style={{ fontSize: 24, fontWeight: '400', textAlign: textAlign  }}>
               {section.subtitle}
             </h5>
           </Row>
         </Row>
-        <Row md={8} style={{marginTop: "20%"}}>
+        <Row className='text-row' md={8}>
           <p style={{ fontSize: 12, fontWeight: '300', textAlign: textAlign  }}>
             {section.text}
           </p>
         </Row>
-      </Col>
-      
+      </Col>   
     </Row>
   )
 }

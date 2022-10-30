@@ -1,30 +1,9 @@
 import {Container, Row, Col, Image} from 'react-bootstrap';
-import sectionImage from '../../assets/images/health-section.png';
 import MenuBarComponent from '../components/menu-bar-component/menu-bar-component';
-import psychoImage from '../../assets/images/health-section-psycho.png';
-import physioImage from '../../assets/images/health-section-physio.png';
-import { render } from 'react-dom';
+import FooterBaseComponent from '../components/footer-base-component/footer-base-component';
+import '../../css/DefaultStyle.min.css';
+
 import SubSection from './components/subsection';
-
-
-const psychology = {
-  key: 0,
-  title: 'Psicologia',
-  subtitle: 'Algo sobre isto para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-  text: 'Um parágrafo maior aqui a respeito do serviço em questão. eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
-  image: psychoImage
-}
-
-const physiotherapy = {
-  key: 1,
-  title: 'Fisioterapia',
-  subtitle: 'Algo sobre isto para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-  text: 'Um parágrafo maior aqui a respeito do serviço em questão. eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
-  image: physioImage
-}
-
-const subsection = [psychology, physiotherapy];
-
 
 const Section = (props) => {
   return (
@@ -38,17 +17,14 @@ const Section = (props) => {
           </h1>
           </Col>
           <Col style={{padding: 0}}>
-            <Image src={sectionImage}  width={680} height={1012.5}/>           
+            <Image src={props.sectionImage}  width={680} height={1012.5}/>           
           </Col>
         </Row>
-        {subsection.map((section) => {
+        {props.subsections.map((section) => {
           return <SubSection section={section} side={section.key}/>
-
-          
-
         })}
-       
       </Container>
+      <FooterBaseComponent/>
     </>
   );
 }
