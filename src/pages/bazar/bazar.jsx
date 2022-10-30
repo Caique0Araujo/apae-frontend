@@ -1,4 +1,4 @@
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import ButtonComponent from "../components/button-component/button-component";
 import MenuBarComponent from "../components/menu-bar-component/menu-bar-component";
 import OutlinedButtonComponent from "../components/outlined-button-component/outlined-button-component";
@@ -6,7 +6,7 @@ import bazar from '../../assets/images/bazar.png';
 import '../../css/DefaultStyle.min.css';
 import './css/Bazar.min.css';
 import VariableWidthGrid from "react-variable-width-grid";
-import { IntlProvider, FormattedNumber } from "react-intl";
+import { ItemGridComponent } from "./components/item-grid-component";
 
 const products = [
     { img: "", id: 1, title: "Produto 0", price: 0.50 },
@@ -19,21 +19,6 @@ const products = [
 ];
 
 function Bazar() {
-    const items = products.map((v, _) => {
-        return (
-            <Card key={v.id} style={{width: 200, marginBottom: 50}}>
-                <Card.Img variant="top" src={bazar} height={125} style={{objectFit: 'cover'}}/>
-                <Card.Body style={{textAlign: 'center'}}>
-                    <Card.Title style={{fontWeight: 500, color: '#666666'}}>{v.title}</Card.Title>
-                    <Card.Text style={{fontWeight: 300, color: '#666666'}}>
-                        <IntlProvider>
-                            <FormattedNumber value={v.price} style='currency' currency="BRL"/>
-                        </IntlProvider>
-                    </Card.Text>
-                </Card.Body>
-            </Card>
-        );
-    });
     return (
         <div>
             <MenuBarComponent/>
@@ -41,7 +26,7 @@ function Bazar() {
             <Container style={{marginTop: 32, marginBottom: 100}}>
                 <Row>
                     <Col>
-                        <img src={bazar} height={450}/>
+                        <img src={bazar}/>
                     </Col>
                     <Col style={{marginTop: 75}}>
                         <h2 className='title right'>Conheça o bazar<br/>da APAE</h2>
@@ -95,11 +80,19 @@ function Bazar() {
 
             <Container style={{marginTop: 32, marginBottom: 100}}>
                 <Row style={{textAlign: 'center'}}>
-                    <h3>Produtos do bazar</h3>
+                    <h3 style={{fontWeight: 500, color: '#666666', fontSize: 35}}>Produtos do bazar</h3>
                 </Row>
 
-                <VariableWidthGrid columnGap={60}>{items}</VariableWidthGrid>
+                <VariableWidthGrid columnGap={60} style={{marginTop: 30}}>
+                    {
+                        products.map((val, _) => 
+                            <ItemGridComponent id={val.id} img={val.img} price={val.price} title={val.title}/>
+                        )
+                    }
+                </VariableWidthGrid>
             </Container>
+
+            <footer></footer>
         </div>
     );
 }
