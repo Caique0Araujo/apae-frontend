@@ -33,7 +33,7 @@ function Bazar() {
                         <h2 className='title right'>Conheça o bazar<br/>da APAE</h2>
                         <p className="subtitle right">Falar como funciona o bazar, como começou talvez. Falar como doar e como comprar. Accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In </p>
                     
-                        <Row className='row-buttons'>
+                        <Row className='row-card'>
                             <OutlinedButtonComponent text='Doar'/>
                             <ButtonComponent text='Comprar'/>
                         </Row>
@@ -87,7 +87,7 @@ function Bazar() {
                 <VariableWidthGrid className='grid' columnGap={60}>
                     {
                         products.map((val, _) => 
-                            <ItemGridComponent id={val.id} img={val.img} price={val.price} title={val.title}/>
+                            <ItemGridComponent key={val.id} id={val.id} img={val.img} price={val.price} title={val.title}/>
                         )
                     }
                 </VariableWidthGrid>

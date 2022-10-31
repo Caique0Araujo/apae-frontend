@@ -9,7 +9,7 @@ export function ItemGridComponent(props) {
             <Card.Body style={{textAlign: 'center'}}>
                 <Card.Title style={{fontWeight: 500, color: '#666666'}}>{props.title}</Card.Title>
                 <Card.Text style={{fontWeight: 300, color: '#666666'}}>
-                    <IntlProvider>
+                    <IntlProvider locale="pt-BR">
                         <FormattedNumber value={props.price} style='currency' currency="BRL"/>
                     </IntlProvider>
                 </Card.Text>
