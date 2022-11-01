@@ -1,5 +1,5 @@
-import './full-page.css'
-
+//import './full-page.css'
+import '../css/full-page.min.css'
 export default function FullPage(props){
     return(
         <nav className='fullPageBox'>
@@ -8,7 +8,7 @@ export default function FullPage(props){
             </div>
             <div>
                 <h1>Título</h1>
-                <h2>Lorem ipsum dolor sit amet consectetur 
+                <p>Lorem ipsum dolor sit amet consectetur 
                     adipisicing elit. Suscipit, corporis quidem. 
                     Voluptatem, provident minima? Maxime 
                     voluptate veritatis odit placeat dolore 
@@ -54,12 +54,8 @@ export default function FullPage(props){
                     voluptate veritatis odit placeat dolore 
                     animi illum, quaerat doloremque esse at 
                     culpa aliquid totam et!
-                    Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Suscipit, corporis quidem. 
-                    Voluptatem, provident minima? Maxime 
-                    voluptate veritatis odit placeat dolore 
-                    animi illum, quaerat doloremque es
-                </h2>
+                    
+                </p>
             </div>
         </nav>
     )

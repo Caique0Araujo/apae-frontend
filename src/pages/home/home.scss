@@ -13,6 +13,19 @@
         font-size: 40px;
     }
 }
+
+@media screen and (orientation: portrait) {
+    .titleBox{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .title{
+            font-size: 30px;
+        }
+    }
+}
 div{
     width: 100%;
 }
