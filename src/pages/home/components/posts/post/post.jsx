@@ -1,4 +1,5 @@
-import './post.css'
+//import './post.css'
+import '../css/post.min.css'
 export default function Post(props){
     return(
         <div className="post">

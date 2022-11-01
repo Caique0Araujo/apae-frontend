@@ -1,4 +1,5 @@
-import './intro.css';
+//import './intro.css';
+import '../css/intro.min.css'
 import '../../../../css/DefaultStyle.min.css';
 import ButtonComponent from "../../../components/button-component/button-component";
 export default function Intro(){

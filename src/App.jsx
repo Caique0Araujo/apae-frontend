@@ -6,9 +6,10 @@ import Section from './pages/section/section';
 
 function App() {
   return (
-    <div className="App">
+    /*<div className="App">
     <Section name="Saúde"/>
-    </div>
+    </div>*/
+    <Home/>
   )
 }
 
