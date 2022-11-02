@@ -12,13 +12,13 @@ const Section = (props) => {
       <MenuBarComponent/>
       <Container className='main-container' fluid>
         <Row className='info-container' >
-          <Col className='right-column' >
+          <Col className='left-column' md={6}>
           <h1 className='info-text'>
             Setor de {props.name} da APAE SJE
           </h1>
           </Col>
           <Col className='info-image'>
-            <Image src={props.sectionImage}  width={680} height={1012.5}/>           
+            <Image src={props.sectionImage}  className='section-image' />           
           </Col>
         </Row>
         {props.subsections.map((section) => {

@@ -11,7 +11,7 @@ const SubSection = (props) => {
   return (
     <Row className='sub-section-container' >
       <Col className='image-column' md={5} xs={{order}}>
-        <Image src={section.image}  width={560} height={808.5} />
+        <img src={section.image} className='subSection-image' />
       </Col>
       <Col className='top-column'>
         <Row className='top-row'>
