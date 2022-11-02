@@ -5,9 +5,15 @@ import '../css/subSection.min.css';
 const SubSection = (props) => {
 
   const section = props.section
-  const order = props.side % 2 == 0 ? 'first' : 'last'
-  const textAlign = props.side % 2 == 0 ? 'end' : 'initial'
-
+  const width = window.innerWidth
+  var order = "first"
+  var textAlign = "initial"
+  if(width >= 768){
+    order = props.side % 2 == 0 ? 'first' : 'last'
+    textAlign = props.side % 2 == 0 ? 'end' : 'initial'
+  }
+ 
+  
   return (
     <Row className='sub-section-container' >
       <Col className='image-column' md={5} xs={{order}}>
