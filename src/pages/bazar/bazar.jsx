@@ -4,7 +4,7 @@ import MenuBarComponent from "../components/menu-bar-component/menu-bar-componen
 import OutlinedButtonComponent from "../components/outlined-button-component/outlined-button-component";
 import bazar from '../../assets/images/bazar.png';
 import '../../css/DefaultStyle.min.css';
-import './css/bazar.min.css';
+import './css/Bazar.min.css';
 import './css/bazar-mobile.min.css';
 import VariableWidthGrid from "react-variable-width-grid";
 import { ItemGridComponent } from "./components/item-grid-component";
@@ -27,10 +27,10 @@ function Bazar() {
     }
 
     return (
-        <div>
+        <div className="main-box">
             <MenuBarComponent/>
 
-            <Container className='section-page'>
+            <Container fluid className='section-page'>
                 <Row>
                     <Col className='logo-bazar'>
                         <img className='logo-bazar' src={bazar}/>
@@ -48,7 +48,7 @@ function Bazar() {
                 </Row>
             </Container>
 
-            <Container className='section-page'>
+            <Container fluid className='section-page'>
                 <Row className="row-card">
                     <Col>
                         <h4 className="title-card">Como doar algo para o bazar?</h4>
@@ -86,7 +86,7 @@ function Bazar() {
                 </Row>
             </Container>
 
-            <Container className='section-page'>
+            <Container fluid className='section-page'>
                 <Row className='grid-row'>
                     <h3 className='grid-title'>Produtos do bazar</h3>
                 </Row>
@@ -95,7 +95,7 @@ function Bazar() {
                 { 
                     products.statusCode != 200 
                         ? <div>{products.msg}</div> 
-                        : <VariableWidthGrid className='grid' columnGap={60}>
+                        : <VariableWidthGrid className='justify-content-md-center' columnGap={60}>
                             {
                                 products.data.map((val, _) => 
                                     <ItemGridComponent key={val.id} id={val.id} img={val.img} price={val.price} title={val.title}/>
