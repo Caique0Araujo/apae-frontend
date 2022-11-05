@@ -8,12 +8,18 @@ const products = [
     { img: "", id: 7, title: "Produto 6", price: 6.50 }
 ];
 
-const result = {
-    statusCode: 200,
-    data: products,
-    msg: null
-}
-
 export async function getAllProducts() {
-    return result;
+    const result = await fetch('http://localhost:3333/products/all');
+    if (result.status != 200) {
+        return {
+            statusCode: result.status,
+            msg: 'Um erro aconteceu'
+        };
+    }
+
+    const json = await result.json();
+    return {
+        statusCode: result.status,
+        data: json,
+    };
 }

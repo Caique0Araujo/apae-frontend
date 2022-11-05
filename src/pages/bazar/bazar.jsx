@@ -19,11 +19,32 @@ function Bazar() {
 
     useEffect(() => {
         loadProducts();
-    });
+    }, []);
 
     const loadProducts = async () => {
         const pr = await getAllProducts();
         setProducts(pr);
+    }
+
+    const gridProdutcs = () => {
+        if (products == null) {
+            // TODO: Talvez fosse interessante algum Spinner de carregamento
+            return <div></div>;
+        }
+
+        if (products.statusCode != 200) {
+            return <div>{products.msg}</div>;
+        }
+
+        return (
+            <VariableWidthGrid className='justify-content-md-center' columnGap={60}>
+                {
+                    products.data.map((val, _) => 
+                        <ItemGridComponent key={val.id_product} id={val.id_product} img={val.image_path} price={val.price} title={val.name}/>
+                    )
+                }
+            </VariableWidthGrid>
+        );
     }
 
     return (
@@ -91,18 +112,7 @@ function Bazar() {
                     <h3 className='grid-title'>Produtos do bazar</h3>
                 </Row>
 
-
-                { 
-                    products.statusCode != 200 
-                        ? <div>{products.msg}</div> 
-                        : <VariableWidthGrid className='justify-content-md-center' columnGap={60}>
-                            {
-                                products.data.map((val, _) => 
-                                    <ItemGridComponent key={val.id} id={val.id} img={val.img} price={val.price} title={val.title}/>
-                                )
-                            }
-                        </VariableWidthGrid>
-                }
+                { gridProdutcs() }
             </Container>
 
             <FooterBaseComponent/>
