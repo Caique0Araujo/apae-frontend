@@ -11,7 +11,7 @@ const Section = (props) => {
     <>
       <MenuBarComponent/>
       <Container className='main-container' fluid>
-        <Row className='info-container' >
+        <Row className={props.sectionClass+'-info-container'} >
           <Col className='left-column' md={6}>
           <h1 className='info-text'>
             Setor de {props.name} da APAE SJE
