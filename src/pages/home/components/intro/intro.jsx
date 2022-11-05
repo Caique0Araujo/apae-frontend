@@ -4,7 +4,7 @@ import '../../../../css/DefaultStyle.min.css';
 import ButtonComponent from "../../../components/button-component/button-component";
 export default function Intro(){
     return(
-        <nav>
+        <nav className='main-box-intro'>
             <div>
                 <h1 className='title'>Conheça melhor a APAE</h1>
                 <h2 className='subtitle'>A Apae - Associação de Pais e Amigos dos Excepcionais 
