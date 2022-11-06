@@ -9,7 +9,7 @@ export default function Posts(props){
                 <h1>Últimos destaques</h1>
             </div>
             
-            {props.arr.map((element) => <Post number={element}/>)}
+            {props.arr.map((val) => <Post key={val.id_news} title={val.title} description={val.description} date={val.created_at_utc}/>)}
         </div>
     )
 }

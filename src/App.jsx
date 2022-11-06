@@ -9,7 +9,7 @@ function App() {
     /*<div className="App">
     <Section name="Saúde"/>
     </div>*/
-    <Bazar/>
+    <Home/>
   )
 }
 
