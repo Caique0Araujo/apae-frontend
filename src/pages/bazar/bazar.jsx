@@ -10,12 +10,15 @@ import VariableWidthGrid from "react-variable-width-grid";
 import { ItemGridComponent } from "./components/item-grid-component";
 import FooterBaseComponent from "../components/footer-base-component/footer-base-component";
 import { useEffect } from "react";
-import { getAllProducts } from "../../repositories/product-repository";
+import { getAllProducts, getById } from "../../repositories/product-repository";
 import { useState } from "react";
+import ModalProduct from "./components/modal-product/modal-product";
 
 function Bazar() {
 
     const [products, setProducts] = useState({});
+    const [product, setProduct] = useState(null);
+    const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
         loadProducts();
@@ -24,6 +27,23 @@ function Bazar() {
     const loadProducts = async () => {
         const pr = await getAllProducts();
         setProducts(pr);
+    }
+
+    const showProduct = async (id) => {
+        const result = await getById(id);
+        if (result.msg != null) {
+            // TODO: Erro, interessante mostrar toast
+            return;
+        }
+
+        const productInfo = result.data;
+        setProduct(productInfo);
+        setShowModal(true);
+    }
+
+    const closeModal = () => {
+        setProduct(null);
+        setShowModal(false);
     }
 
     const gridProdutcs = () => {
@@ -40,7 +60,14 @@ function Bazar() {
             <VariableWidthGrid className='justify-content-md-center' columnGap={60}>
                 {
                     products.data.map((val, _) => 
-                        <ItemGridComponent key={val.id_product} id={val.id_product} img={val.image_path} price={val.price} title={val.name}/>
+                        <ItemGridComponent 
+                            key={val.id_product} 
+                            id={val.id_product} 
+                            img={val.image_path} 
+                            price={val.price} 
+                            title={val.name}
+                            onClick={showProduct}
+                        />
                     )
                 }
             </VariableWidthGrid>
@@ -49,6 +76,12 @@ function Bazar() {
 
     return (
         <div className="main-box">
+            <ModalProduct 
+                data={product} 
+                visible={showModal} 
+                onHide={closeModal}
+            />
+
             <MenuBarComponent/>
 
             <Container fluid className='section-page'>

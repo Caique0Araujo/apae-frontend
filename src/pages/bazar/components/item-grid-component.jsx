@@ -4,7 +4,7 @@ import bazar from '../../../assets/images/bazar.png';
 
 export function ItemGridComponent(props) {
     return (
-        <Card key={props.id} className='item-grid' style={{width: 200, marginBottom: 50}}>
+        <Card key={props.id} className='item-grid' style={{width: 200, marginBottom: 50}} onClick={() => props.onClick(props.id)}>
             <Card.Img variant="top" src={bazar} height={125} style={{objectFit: 'cover'}}/>
             <Card.Body style={{textAlign: 'center'}}>
                 <Card.Title style={{fontWeight: 500, color: '#666666'}}>{props.title}</Card.Title>

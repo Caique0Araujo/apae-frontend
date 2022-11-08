@@ -15,3 +15,17 @@ export async function getAllProducts() {
         data: json,
     };
 }
+
+
+export async function getById(id) {
+    return {
+        statusCode: 200,
+        data: {
+            "id_product": 1,
+            "name": "Produto Rexona",
+            "description": "Aqui vai aquela descrição top sobre o produto",
+            "price": 5.85,
+            "image_path": ""
+        }
+    };
+}
