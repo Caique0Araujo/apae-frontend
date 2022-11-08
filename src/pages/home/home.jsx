@@ -6,12 +6,12 @@ import FooterBaseComponent from '../components/footer-base-component/footer-base
 import Posts from './components/posts/posts';
 
 export default function Home(){
-    return(
+    return (
         <div className='main-box-home'>
             <MenuBarComponent/>
             <Intro/>
             <Posts/>
             <FooterBaseComponent/>
         </div>
-    )
+    );
 }

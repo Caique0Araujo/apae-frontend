@@ -29,7 +29,7 @@ export default function Posts(){
                     <Post 
                         key={val.id_news} 
                         title={val.title} 
-                        description={val.description} 
+                        description={val.text} 
                         date={val.created_at_utc}
                     />
                 )
