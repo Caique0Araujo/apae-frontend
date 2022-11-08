@@ -1,6 +1,9 @@
 import './css/news.min.css'
-
+import { useState } from 'react'
+import ModalProduct from '../bazar/components/modal-product/modal-product'
 export default function News(props) {
+    const [a, seta] = useState(false)
+    
     return(
         <nav className='news-main-box'>
             <div className='title-box'>
@@ -48,6 +51,13 @@ export default function News(props) {
                     possimus quia sint itaque ipsa!
                 </p>
             </div>
+            <button onClick={()=>{
+                seta(true)
+            }}>
+                teste
+            </button>
+
+            <ModalProduct show={a} onHide={() => seta(false)}/>
              </nav>
     )
 }
