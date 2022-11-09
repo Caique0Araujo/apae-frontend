@@ -1,0 +1,98 @@
+.header{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+   /* border-width: 2.5px;
+    border-style: solid;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+
+    border-color: rgba(102, 102, 102, 0.144);*/ 
+    box-shadow: rgba(204, 204, 204, 0.5) 0px 0px 5px 1px;
+   
+
+    div{
+        height: 65px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        //background-color: #666;
+        
+        img{
+            width: 40px;
+        }
+
+        h4{
+            font-size: 10px;
+            font-weight: 700;
+            color: #666;
+            text-align: center;
+        }
+    }
+
+    ul{
+        height: 65px;
+        width: 70%;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        //background-color: #666;
+
+        li{
+           // margin-right: 60px;
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                color: #666;
+                font-size: 15px;
+                transition: 600ms;
+            }
+
+            a:hover{
+                color: #74B05C;
+                transition: 400ms;
+            }
+        }
+    }
+
+    div:last-child{
+        height: 60px;
+        display: flex;
+        justify-content: center;
+
+        button{
+            border-radius: 100px;
+            width: 110px;
+            height: 35px;
+            border-width: 1.5px;
+            background-color: white;
+            border-color: #74B05C;
+            font-size: 13px;
+            color: #666;
+            transition: 800ms;
+        }
+
+        button:hover{
+            box-shadow: rgba(204, 204, 204, 0.5) 0px 0px 10px 3px;
+            transition: 600ms;
+            background-color: #74B05C;
+            color: white;
+            border: none;
+        }
+    }
+}
