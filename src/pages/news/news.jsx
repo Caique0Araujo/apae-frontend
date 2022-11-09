@@ -1,8 +1,11 @@
-import './css/news.min.css'
-import { useState } from 'react'
-import ModalProduct from '../bazar/components/modal-product/modal-product'
+import './css/news.min.css';
+import { useState } from 'react';
+import ModalProduct from '../bazar/components/modal-product/modal-product';
+
 export default function News(props) {
-    const [a, seta] = useState(false)
+    const [a, seta] = useState(false);
+    //let { id } = useParams();
+    //console.log(id);
     
     return(
         <nav className='news-main-box'>

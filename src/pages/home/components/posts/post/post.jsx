@@ -4,8 +4,9 @@ export default function Post(props){
     const title = props.title;
     const description = props.description;
     const date = props.date;
+
     return(
-        <div className="post">
+        <div className="post" onClick={() => props.onClick(props.id, props.date)}>
             <div>
                 <h1>{title}</h1>
                 <h2>{description}</h2>
