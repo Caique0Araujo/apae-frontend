@@ -18,14 +18,17 @@ export async function getAllProducts() {
 
 
 export async function getById(id) {
+    const result = await fetch(`${API_URL}/products/byId/${id}`);
+    if (result.status != 200) {
+        return {
+            statusCode: result.status,
+            msg: 'Um erro aconteceu'
+        };
+    }
+    
+    const json = await result.json();
     return {
         statusCode: 200,
-        data: {
-            "id_product": 1,
-            "name": "Produto Rexona",
-            "description": "Aqui vai aquela descrição top sobre o produto",
-            "price": 5.85,
-            "image_path": ""
-        }
+        data: json
     };
 }
