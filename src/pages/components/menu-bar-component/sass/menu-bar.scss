@@ -50,10 +50,12 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        //background-color: #666;
+
+        .link{
+            text-decoration: none;
+        }
 
         li{
-           // margin-right: 60px;
             list-style: none;
 
             a{

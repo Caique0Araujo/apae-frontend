@@ -3,27 +3,26 @@ import './css/menu-bar-mobile.min.css'
 import OutlinedButtonComponent from '../outlined-button-component/outlined-button-component';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 function MenuBarComponent() {
 
-    const [width, setWidth] = useState(window.innerWidth)
     const [orientation, setOrientation] = useState(
-        window.innerWidth >= 768? 0 : 1
+        window.innerWidth >= 600? 0 : 1
     )
     const [click, setClick] = useState (false)
-
-    /*useEffect(() => {
-        setWidth(window.innerWidth)
-    }, []);*/
-
+    
     function handleOrientationChange(
-            mediaQuerie
-        ) { 
-        if (mediaQuerie.matches) { 
+        mediaQuerie
+    ) {
+        if (mediaQuerie.matches) {
             setOrientation(1);
-        } else { setOrientation(0);
-        } } 
-        var mediaQuerie = window.matchMedia("(orientation: portrait)");
-        mediaQuerie.addListener(handleOrientationChange);
+            setClick(false)
+        } else {
+            setOrientation(0);
+        }
+    }
+    var mediaQuerie = window.matchMedia("(orientation: portrait)");
+    mediaQuerie.addListener(handleOrientationChange);
 
     if(orientation == 0){
         return (
@@ -33,10 +32,11 @@ function MenuBarComponent() {
                     <h4>APAE</h4>
                 </div>
                 <ul>
-                    <li><a href="">Início</a></li>
+                <h1>{click}</h1>
+                    <Link className='link' to={'/'}><li><a href="">Início</a></li></Link>
                     <li><a href="">Saiba mais</a></li>
                     <li><a href="">Oficinas</a></li>
-                    <li><a href="">Bazar</a></li>
+                    <Link className='link' to={'/bazar'}><li><a href="">Bazar</a></li></Link>
                     <li><a href="">Setores</a></li>
                     <li><a href="">Quem somos</a></li>
                 </ul>
@@ -75,10 +75,10 @@ function MenuBarComponent() {
 
                             <div>
                                 <ul>
-                                    <li> <img src="src\assets\icons\home icon.png" alt="" /> <h6 href="">Início</h6></li>
+                                    <Link className='link' to={'/'}><li> <img src="src\assets\icons\home icon.png" alt="" /> <h6 href="">Início</h6></li></Link>
                                     <li> <img src="src\assets\icons\info-icon.png" alt="" /> <h6 href="">Saiba mais</h6></li>
                                     <li> <img src="src\assets\icons\gear-icon.png" alt="" /> <h6 href="">Oficinas</h6></li>
-                                    <li> <img src="src\assets\icons\bazaar-icon.png" alt="" /> <h6 href="">Bazar</h6></li>
+                                    <Link className='link' to={'/bazar'}><li> <img src="src\assets\icons\bazaar-icon.png" alt="" /> <h6 href="">Bazar</h6></li></Link>
                                     <li> <img src="src\assets\icons\section-icon.png" alt="" /> <h6 href="">Setores</h6></li>
                                     <li> <img src="src\assets\icons\people-icon.png" alt="" /> <h6 href="">Quem somos</h6></li>
                                 </ul>

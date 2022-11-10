@@ -75,6 +75,8 @@ function Bazar() {
     }
 
     return (
+        <>
+        <MenuBarComponent/>
         <div className="main-box">
             <ModalProduct 
                 data={product} 
@@ -82,7 +84,7 @@ function Bazar() {
                 onHide={closeModal}
             />
 
-            <MenuBarComponent/>
+            
 
             <Container fluid className='section-page'>
                 <Row>
@@ -150,6 +152,7 @@ function Bazar() {
 
             <FooterBaseComponent/>
         </div>
+        </>
     );
 }
 
