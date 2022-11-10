@@ -6,13 +6,26 @@ import { useEffect } from 'react';
 function MenuBarComponent() {
 
     const [width, setWidth] = useState(window.innerWidth)
+    const [orientation, setOrientation] = useState(
+        window.innerWidth >= 768? 0 : 1
+    )
     const [click, setClick] = useState (false)
 
-    useEffect(() => {
+    /*useEffect(() => {
         setWidth(window.innerWidth)
-    }, []);
+    }, []);*/
 
-    if(width >= 768){
+    function handleOrientationChange(
+            mediaQuerie
+        ) { 
+        if (mediaQuerie.matches) { 
+            setOrientation(1);
+        } else { setOrientation(0);
+        } } 
+        var mediaQuerie = window.matchMedia("(orientation: portrait)");
+        mediaQuerie.addListener(handleOrientationChange);
+
+    if(orientation == 0){
         return (
             <div className='header'>
                 <div>
@@ -36,7 +49,6 @@ function MenuBarComponent() {
     else{
         return(
             <>
-
                 {click
                     ? <div className='closed-drawer'>
                         <button className='drawer-button' 
