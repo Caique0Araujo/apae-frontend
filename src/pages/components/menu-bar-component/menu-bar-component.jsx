@@ -33,12 +33,12 @@ function MenuBarComponent() {
                 </div>
                 <ul>
                 <h1>{click}</h1>
-                    <Link className='link' to={'/'}><li><a href="">Início</a></li></Link>
-                    <li><a href="">Saiba mais</a></li>
-                    <li><a href="">Oficinas</a></li>
-                    <Link className='link' to={'/bazar'}><li><a href="">Bazar</a></li></Link>
-                    <li><a href="">Setores</a></li>
-                    <li><a href="">Quem somos</a></li>
+                    <Link className='link' to={'/'}><li>Início</li></Link>
+                    <li>Saiba mais</li>
+                    <li>Oficinas</li>
+                    <Link className='link' to={'/bazar'}><li>Bazar</li></Link>
+                    <li>Setores</li>
+                    <li>Quem somos</li>
                 </ul>
                 <div>
                     <button>Fale conosco</button>

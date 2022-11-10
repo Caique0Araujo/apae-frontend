@@ -57,18 +57,14 @@
 
         li{
             list-style: none;
-
-            a{
-                text-decoration: none;
-                color: #666;
-                font-size: 15px;
-                transition: 600ms;
-            }
-
-            a:hover{
-                color: #74B05C;
-                transition: 400ms;
-            }
+            text-decoration: none;
+            color: #666;
+            font-size: 15px;
+            transition: 600ms;
+        }
+        li:hover{
+            color: #74B05C;
+            transition: 400ms;
         }
     }
 
