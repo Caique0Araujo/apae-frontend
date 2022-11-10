@@ -76,8 +76,9 @@ function Bazar() {
 
     return (
         <>
-        <MenuBarComponent/>
+        
         <div className="main-box">
+            <MenuBarComponent/>
             <ModalProduct 
                 data={product} 
                 visible={showModal} 
