@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Posts(){
     const [news, setNews] = useState([]);
+    const [error, setError] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -15,10 +16,16 @@ export default function Posts(){
     }, []);
 
     const loadNews = async () => {
-        // TODO: mostra spinner de carregamento no final das notícias
-        const _news = await getMostRecentNews(news.length, 5);
-        setNews(_news);
-        // TODO: desativa o spinner
+        setError(false);
+
+        try {
+            // TODO: mostra spinner de carregamento no final das notícias
+            const _news = await getMostRecentNews(news.length, 5);
+            setNews(_news);
+            // TODO: desativa o spinner
+        } catch {
+            setError(true);
+        }
     };
 
     const onClickInPost = (id, date) => {
@@ -30,24 +37,39 @@ export default function Posts(){
         navigate(`noticia/${base}`, { id: base });
     }
 
+    const showNews = () => {
+        if (error == true) {
+            // TODO: Colocar um erro customizado
+            return (
+                <div>Erro</div>
+            );
+        }
+
+        return (
+            <>
+                {
+                    news.map((val) => 
+                        <Post 
+                            key={val.id_news} 
+                            title={val.title} 
+                            description={val.text} 
+                            date={val.created_at_utc}
+                            onClick={onClickInPost}
+                            id={val.id_news}
+                        />
+                    )
+                }
+            </>
+        );
+    }
+
     return(
         <div className='postsContainer'>
             <div className='title-box'>
                 <h1>Últimos destaques</h1>
             </div>
             
-            { 
-                news.map((val) => 
-                    <Post 
-                        key={val.id_news} 
-                        title={val.title} 
-                        description={val.text} 
-                        date={val.created_at_utc}
-                        onClick={onClickInPost}
-                        id={val.id_news}
-                    />
-                )
-            }
+            { showNews() }
         </div>
     )
 }
