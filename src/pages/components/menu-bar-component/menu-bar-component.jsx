@@ -1,9 +1,8 @@
 import './css/menu-bar.min.css'
 import './css/menu-bar-mobile.min.css'
-import OutlinedButtonComponent from '../outlined-button-component/outlined-button-component';
 import { useState } from 'react';
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
 function MenuBarComponent() {
 
     const [orientation, setOrientation] = useState(
@@ -16,7 +15,7 @@ function MenuBarComponent() {
     ) {
         if (mediaQuerie.matches) {
             setOrientation(1);
-            setClick(false)
+            setClick(false);
         } else {
             setOrientation(0);
         }
@@ -49,18 +48,18 @@ function MenuBarComponent() {
     else{
         return(
             <>
-                {click
+                {click === false
                     ? <div className='closed-drawer'>
                         <button className='drawer-button' 
                             onClick={() => {
-                            setClick(false)
+                            setClick(true)
                         }}/>
                     </div>
 
                     : <div className='open-drawer'>
                         <button className='drawer-button'
                             onClick={() => {
-                                setClick(true)
+                                setClick(false)
                             }}
                         />
 
