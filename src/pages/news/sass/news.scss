@@ -81,3 +81,23 @@
     }
     
 }
+
+.error-box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: large;
+        color: #666;
+        font-weight: 400;
+    }
+}
+
+.loading-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

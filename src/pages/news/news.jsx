@@ -5,12 +5,14 @@ import { useEffect } from 'react';
 import { Buffer } from 'buffer';
 import { getById } from '../../repositories/news-repository';
 import { FormattedDate, IntlProvider } from 'react-intl';
+import ClipLoader from "react-spinners/ClipLoader";
 
 export default function News(props) {
     const { id } = useParams();
     const [news, setNews] = useState(null);
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(false);
+    const color = '#74B05C'
 
     useEffect(() => {
         loadNews();
@@ -33,23 +35,28 @@ export default function News(props) {
     }
 
     if (error == true) {
-        // TODO: Interessante colocar algo nesta parte
         return (
-            <div>Ocorreu um error</div>
+            <div className='error-box'><h1>Ocorreu um erro :(</h1></div>
         );
     }
 
     if (loading == true) {
-        // TODO: Interessante colocar algo nesta parte
         return (
-            <div>Laoding</div>
+            <div className='loading-box'>
+                <ClipLoader
+                color={color}
+                loading={loading}
+                size={80}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+            />
+            </div> 
         );
     }
 
     if (news == null) {
-        // TODO: Interessante colocar algo nesta parte
         return (
-            <div>News not founded</div>
+            <div className='error-box'><h1>Notícia não encontrada :(</h1></div>
         );
     }
 

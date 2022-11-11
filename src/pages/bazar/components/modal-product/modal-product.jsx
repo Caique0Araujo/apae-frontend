@@ -35,8 +35,10 @@ export default function ModalProduct(props) {
           </div>
 
           <div>
+            <div>
               <h3>{name}</h3>
               <p>{description}</p>
+            </div>
               <IntlProvider locale='pt-BR'>
                 <FormattedNumber value={price} style='currency' currency='BRL' />
               </IntlProvider>
