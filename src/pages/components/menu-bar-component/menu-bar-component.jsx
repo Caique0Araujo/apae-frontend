@@ -36,7 +36,7 @@ function MenuBarComponent() {
                     <li>Saiba mais</li>
                     <li>Oficinas</li>
                     <Link className='link' to={'/bazar'}><li>Bazar</li></Link>
-                    <li>Setores</li>
+                    <Link className='link' to={'/saude'}><li>Setores</li></Link>
                     <li>Quem somos</li>
                 </ul>
                 <div>

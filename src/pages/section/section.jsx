@@ -7,11 +7,12 @@ import './css/section.min.css'
 import SubSection from './components/subSection';
 
 const Section = (props) => {
+
   return (
     <>
       <MenuBarComponent/>
       <Container className='main-container' fluid>
-        <Row className={props.sectionClass+'-info-container'} >
+        <Row className={`${props.sectionClass}-section-info-container`} >
           <Col className='left-column' md={6}>
           <h1 className='info-text'>
             Setor de {props.name} da APAE SJE
