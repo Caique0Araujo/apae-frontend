@@ -10,7 +10,6 @@ const Section = (props) => {
 
   return (
     <>
-      <MenuBarComponent/>
       <Container className='main-container' fluid>
         <Row className={`${props.sectionClass}-section-info-container`} >
           <Col className='left-column' md={6}>
@@ -26,7 +25,6 @@ const Section = (props) => {
           return <SubSection section={section} side={section.key}/>
         })}
       </Container>
-      <FooterBaseComponent/>
     </>
   );
 }

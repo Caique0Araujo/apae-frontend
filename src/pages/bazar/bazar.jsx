@@ -78,7 +78,6 @@ function Bazar() {
         <>
         
         <div className="main-box">
-            <MenuBarComponent/>
             <ModalProduct 
                 data={product} 
                 visible={showModal} 
@@ -151,7 +150,6 @@ function Bazar() {
                 { gridProdutcs() }
             </Container>
 
-            <FooterBaseComponent/>
         </div>
         </>
     );
