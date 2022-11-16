@@ -39,7 +39,7 @@ function MenuBarComponent() {
                     <Link className='link'><li className='menu-dropdown'>
                         <li>Setores</li>
                         <div className='menu-dropdow-content'>
-                            <Link className='dropdown-menu-itens'>Administrativo</Link>
+                            <Link className='dropdown-menu-itens' to={'/administrativo'}>Administrativo</Link>
                             <Link className='dropdown-menu-itens' to={'/educacao'}>Educação</Link>
                             <Link className='dropdown-menu-itens' to={'/assistencia-social'}>Assistência social</Link>
                             <Link className='dropdown-menu-itens' to={'/centro-dia'}>Centro DIA</Link>

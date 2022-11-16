@@ -11,6 +11,26 @@ import FooterBaseComponent from './pages/components/footer-base-component/footer
 import psychoImage from './assets/images/health-section-psycho.png';
 import physioImage from './assets/images/health-section-physio.png';
 
+const administrativoData = {
+  title: 'Setor Administrativo da APAE SJE',
+  image: healthImage,
+  invertSub: true,
+  sub: [
+    {
+      title: 'Ditadura',
+      subtitle: 'Algo sobre isto para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
+      text: 'Um parágrafo maior aqui a respeito do serviço em questão. eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
+      image: psychoImage
+    },
+    {
+      title: 'Como funciona',
+      subtitle: 'Algo sobre isto para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
+      text: 'Um parágrafo maior aqui a respeito do serviço em questão. eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
+      image: physioImage
+    }
+  ],
+};
+
 const educacaoData = {
   title: 'Setor de Educação da APAE SJE',
   image: healthImage,
@@ -88,6 +108,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/noticia/:id' element={<News/>}/>
         <Route path='/bazar' element={<Bazar/>}/>
+        <Route path='/administrativo' element={<Section data={administrativoData}/>}/>
         <Route path='/educacao' element={<Section data={educacaoData}/>}/>
         <Route path='/assistencia-social' element={<Section data={assistenciaSocialData}/>}/>
         <Route path='/centro-dia' element={<Section data={centroDiaData}/>}/>
