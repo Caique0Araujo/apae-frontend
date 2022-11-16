@@ -87,6 +87,7 @@
                     }
 
                     h6{
+                        transition: 400ms;
                         text-decoration: none;
                         color: #666;
                         margin-left: 15px;
@@ -100,13 +101,106 @@
                     transition: 600ms;
                     padding: 5px;
                     padding-left: 15px;
+                    h6{
+                        transition: 400ms;
+                        color: #74B05C;
+                    }
                 }
+
                 li:active{
                     transition: 600ms;
                     background-color: #74B05C;
 
                     h6{
                         color: white;
+                    }
+                }
+
+                .dropdown{
+                    animation-name: resize-down;
+                    animation-duration: 1s;
+                    animation-fill-mode: forwards;
+
+                    div{
+                        display: none;
+                        position: absolute;
+                        top: 30px;
+                    }
+                }
+                .dropdown:active{
+                    background-color: rgba(204, 204, 204, 0.253);
+                    h6{
+                        color: #74B05C;
+                    }
+                }
+
+                .dropdown:hover{
+                    animation-name: resize-up;
+                    animation-duration: 1s;
+                    animation-fill-mode: forwards;
+                    align-items: flex-start;
+                    background-color: rgba(204, 204, 204, 0.253);
+
+                    .dropdown-content{
+                        width: 90%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+
+                        .dropdown-itens{
+                            transition: 400px;
+                            padding-left: 45px;
+                            width: 100%;
+                            text-align: start;
+                            text-decoration: none;
+                            color: #666;
+                            font-size: 15px;
+                            margin-bottom: 3px;
+                        }
+
+                        .dropdown-itens:active{
+                            animation: swap-color 600ms;
+                            background-color: #74B05C;
+                            color: #ffffff;
+                            border-radius: 10px;
+                        }
+
+                        .dropdown-itens:hover{
+                            animation: swap-color 600ms;
+                            background-color: #74B05C;
+                            color: #ffffff;
+                            border-radius: 10px;
+                        }
+
+                        @keyframes swap-color{
+                            from{
+                                background-color: transparent;
+                            }
+                            to{
+                                background-color: #74B05C;
+                            }
+                        }
+                    }
+                }
+
+                @keyframes resize-up {
+                    from{
+                        height: 50px;
+                    }
+                    to{
+                        height: 200px;
+                    }
+                }
+
+                @keyframes resize-down {
+                    from{
+                        height: 200px;
+                    }
+                    to{
+                        height: 50px;
                     }
                 }
             }

@@ -36,7 +36,17 @@ function MenuBarComponent() {
                     <li>Saiba mais</li>
                     <li>Oficinas</li>
                     <Link className='link' to={'/bazar'}><li>Bazar</li></Link>
-                    <Link className='link' to={'/saude'}><li>Setores</li></Link>
+                    <Link className='link' to={'/saude'}><li className='menu-dropdown'>
+                        <li>Setores</li>
+                        <div className='menu-dropdow-content'>
+                            <Link className='dropdown-menu-itens'>Administrativo</Link>
+                            <Link className='dropdown-menu-itens'>Educação</Link>
+                            <Link className='dropdown-menu-itens'>Assistência social</Link>
+                            <Link className='dropdown-menu-itens'>Centro DIA</Link>
+                            <Link className='dropdown-menu-itens'>Saúde</Link>
+                        </div>
+                        
+                    </li></Link>
                     <li>Quem somos</li>
                 </ul>
                 <div>
@@ -78,7 +88,16 @@ function MenuBarComponent() {
                                     <li> <img src="src\assets\icons\info-icon.png" alt="" /> <h6 href="">Saiba mais</h6></li>
                                     <li> <img src="src\assets\icons\gear-icon.png" alt="" /> <h6 href="">Oficinas</h6></li>
                                     <Link className='link' to={'/bazar'}><li> <img src="src\assets\icons\bazaar-icon.png" alt="" /> <h6 href="">Bazar</h6></li></Link>
-                                    <li> <img src="src\assets\icons\section-icon.png" alt="" /> <h6 href="">Setores</h6></li>
+                                    <li className='dropdown'> 
+                                        <img src="src\assets\icons\section-icon.png" alt="" /> <h6 href="">Setores</h6>
+                                        <div className='dropdown-content'>
+                                            <Link className='dropdown-itens'>Administrativo</Link>
+                                            <Link className='dropdown-itens'>Educação</Link>
+                                            <Link className='dropdown-itens'>Assistência social</Link>
+                                            <Link className='dropdown-itens'>Centro DIA</Link>
+                                            <Link className='dropdown-itens'>Saúde</Link>
+                                        </div>
+                                    </li>
                                     <li> <img src="src\assets\icons\people-icon.png" alt="" /> <h6 href="">Quem somos</h6></li>
                                 </ul>
                             </div>
