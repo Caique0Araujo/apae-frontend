@@ -36,14 +36,14 @@ function MenuBarComponent() {
                     <li>Saiba mais</li>
                     <li>Oficinas</li>
                     <Link className='link' to={'/bazar'}><li>Bazar</li></Link>
-                    <Link className='link' to={'/saude'}><li className='menu-dropdown'>
+                    <Link className='link'><li className='menu-dropdown'>
                         <li>Setores</li>
                         <div className='menu-dropdow-content'>
                             <Link className='dropdown-menu-itens'>Administrativo</Link>
-                            <Link className='dropdown-menu-itens'>Educação</Link>
-                            <Link className='dropdown-menu-itens'>Assistência social</Link>
-                            <Link className='dropdown-menu-itens'>Centro DIA</Link>
-                            <Link className='dropdown-menu-itens'>Saúde</Link>
+                            <Link className='dropdown-menu-itens' to={'/educacao'}>Educação</Link>
+                            <Link className='dropdown-menu-itens' to={'/assistencia-social'}>Assistência social</Link>
+                            <Link className='dropdown-menu-itens' to={'/centro-dia'}>Centro DIA</Link>
+                            <Link className='dropdown-menu-itens' to={'/saude'}>Saúde</Link>
                         </div>
                         
                     </li></Link>
