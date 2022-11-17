@@ -5,10 +5,12 @@ import '../css/posts.min.css';
 import Post from './post/post';
 import { Buffer } from 'buffer';
 import { useNavigate } from 'react-router-dom';
-
+import ClipLoader from "react-spinners/ClipLoader";
 export default function Posts(){
     const [news, setNews] = useState([]);
     const [error, setError] = useState(false);
+    const [loading, setLoading] = useState(false)
+    const color = '#74B05C'
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -19,10 +21,10 @@ export default function Posts(){
         setError(false);
 
         try {
-            // TODO: mostra spinner de carregamento no final das notícias
+            setLoading(true)
             const _news = await getMostRecentNews(news.length, 5);
             setNews(_news);
-            // TODO: desativa o spinner
+            setLoading(false)
         } catch {
             setError(true);
         }
@@ -39,9 +41,22 @@ export default function Posts(){
 
     const showNews = () => {
         if (error == true) {
-            // TODO: Colocar um erro customizado
             return (
-                <div>Erro</div>
+                <div className='error-box'><h1>Ocorreu um erro :(</h1></div>
+            );
+        }
+
+        if(loading){
+            return(
+                <div className='loading-box'>
+                <ClipLoader
+                color={color}
+                loading={loading}
+                size={80}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+                />
+                </div> 
             );
         }
 

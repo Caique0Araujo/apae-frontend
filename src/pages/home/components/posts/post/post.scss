@@ -115,3 +115,16 @@
     }
     
 }
+
+.error-box{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: large;
+        color: #666;
+        font-weight: 400;
+    }
+}
