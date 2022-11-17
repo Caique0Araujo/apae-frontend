@@ -47,7 +47,7 @@ function MenuBarComponent() {
                         </div>
                         
                     </span></Link>
-                    <li>Quem somos</li>
+                    <Link className='link' to={'/about-us'}><li>Quem somos</li></Link>
                 </ul>
                 <div>
                     <button>Fale conosco</button>
