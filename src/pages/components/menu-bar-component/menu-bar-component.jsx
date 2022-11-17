@@ -36,7 +36,7 @@ function MenuBarComponent() {
                     <li>Saiba mais</li>
                     <li>Oficinas</li>
                     <Link className='link' to={'/bazar'}><li>Bazar</li></Link>
-                    <Link className='link'><li className='menu-dropdown'>
+                    <Link className='link'><span className='menu-dropdown'>
                         <li>Setores</li>
                         <div className='menu-dropdow-content'>
                             <Link className='dropdown-menu-itens' to={'/administrativo'}>Administrativo</Link>
@@ -46,7 +46,7 @@ function MenuBarComponent() {
                             <Link className='dropdown-menu-itens' to={'/saude'}>Saúde</Link>
                         </div>
                         
-                    </li></Link>
+                    </span></Link>
                     <li>Quem somos</li>
                 </ul>
                 <div>
