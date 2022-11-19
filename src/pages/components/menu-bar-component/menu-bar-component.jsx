@@ -98,7 +98,8 @@ function MenuBarComponent() {
                                             <Link className='dropdown-itens'>Saúde</Link>
                                         </div>
                                     </li>
-                                    <li> <img src="src\assets\icons\people-icon.png" alt="" /> <h6 href="">Quem somos</h6></li>
+                                    
+                                    <Link className='link' to={'/about-us'}><li> <img src="src\assets\icons\people-icon.png" alt="" /> <h6 href="">Quem somos</h6></li></Link>
                                 </ul>
                             </div>
 

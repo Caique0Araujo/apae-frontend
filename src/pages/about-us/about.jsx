@@ -7,32 +7,22 @@ export default function About (props) {
         return(
             <div className='card-main-box'>
 
-                <section>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Quos libero cum aliquid perferendis beatae incidunt unde
-                         , optio, voluptatum vero mollitia magni cumque hic ut.
-                          Veniam vitae fugiat temporibus impedit iusto.
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Quos libero cum aliquid perferendis beatae incidunt unde
-                         , optio, voluptatum vero mollitia magni cumque hic ut.
-                          Veniam vitae fugiat temporibus impedit iusto.
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Quos libero cum aliquid perferendis beatae incidunt unde
-                         , optio, voluptatum vero mollitia magni cumque hic ut.
-                          Veniam vitae fugiat temporibus impedit iusto.
+                <section className='left-text'>
+                    <p>Formada el seila oq e seila onde fez 
+                        pos em algum lugar e trabalhou em não 
+                        sei fazendo seila
                     </p>
                 </section>
 
-                <section>
+                <section className='identification'>
                     <img src="src\assets\images\woman-professional.jpg" alt="" />
                     <h1>Ana Maria Silva Souza</h1>
                 </section>
 
-                <section>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Quos libero cum aliquid perferendis beatae incidunt unde
-                         , optio, voluptatum vero mollitia magni cumque hic ut.
-                          Veniam vitae fugiat temporibus impedit iusto.
+                <section className='right-text'>
+                    <p>Faz tal coisa aqui com tais pessoas 
+                        que serve pra alguma coisa que é 
+                        importante por algum motivo
                     </p>
                 </section>
             </div>

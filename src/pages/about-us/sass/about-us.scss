@@ -159,3 +159,173 @@
         transform: scale(1.005);
     }
 }
+
+@media screen and (orientation: portrait) {
+    .about-us-main-box{
+        width: 100%;
+        height: max-content;
+    
+        .intro{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+    
+            section:first-child{
+                width: 100%;
+                height: max-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 10px;
+                margin-bottom: 60px;
+    
+                h1{
+                    text-align: center;
+                    color:#666;
+                    font-weight:500;
+                    font-size: 2rem;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                p{
+                    text-align: center;
+                    color:#666;font-weight:300;
+                    font-size: 1.2rem;
+                    width: 100%;
+                }
+            }
+    
+            section:last-child{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+        
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    
+        .list-box{
+            width: 100%;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            h2{
+                width: 100%;
+                padding-left: 3%;
+                margin-bottom: 40px;
+                font-size: 2rem;
+                font-weight: 500;
+                color:#666;
+                text-align: center;
+            }
+        }
+    
+        .card-main-box{
+            transition: 400ms;
+            width: 94%;
+            height: fit-content;
+            border: rgba(204, 204, 204, 0.5) solid 1px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            padding: 20px;
+
+            .left-text {grid-area: main;}
+            .identification {grid-area: header;}
+            .right-text {grid-area: footer;}
+    
+            display: grid;
+            grid-template-areas: 
+            'header header header header header header'
+            'main main main main main main'
+            'footer footer footer footer footer footer'
+            ;
+            gap: 10px;
+    
+            section:nth-child(1)
+            {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                
+                p{
+                    color: #666666;
+                    font-weight: 300;
+                    font-size: 17px;
+                    text-align: justify;
+                }
+            }
+    
+            section:nth-child(2)
+            {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+    
+                img{
+                    transition: 600ms;
+                    width: 130px;
+                    height: 130px;
+                    border-radius: 200px;
+                    border: 3px solid #74B05C;
+                }
+    
+                img:hover{
+                    transition: 600ms;
+                    transform: scale(2);
+                    box-shadow: rgba(204, 204, 204, 0.5) 0px 0px 5px 3px;
+                    margin-bottom: 50px;
+                }
+    
+                h1{
+                    text-align: start;
+                    color:#74B05C;
+                    font-weight:500;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 80%;
+                }
+            }
+    
+            section:nth-child(3)
+            {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                
+                p{
+                    color: #666666;
+                    font-weight: 300;
+                    font-size: 17px;
+                    text-align: justify;
+                }
+            }
+        }
+    
+        .card-main-box:hover{
+            transition: 400ms;
+            box-shadow: rgba(204, 204, 204, 0.5) 0px 0px 5px 1px;
+            border-radius: 20px;
+            transform: scale(1.005);
+        }
+    }
+    
+}
