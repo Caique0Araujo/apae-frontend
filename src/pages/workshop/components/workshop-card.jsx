@@ -1,30 +1,32 @@
 import { Col, Row} from 'react-bootstrap';
 import '../css/workshop-card.min.css';
-import img from '../../../assets/images//health-section-psycho.png'
+import img1 from '../../../assets/images/workshop-img1.png'
+import img2 from '../../../assets/images/workshop-img2.png'
+import img3 from '../../../assets/images/workshop-img3.png'
+
 
 const WorkshopCard = (props) => {
+
+  const workshop = props.workshop;
+
   return (
     <div className="main">
       <Col className='text-col'>
         <Row className='titles-row'>
-          <h1>Oficina de culinária</h1>
-          <h4>Algo sobre este tipo de oficina para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)</h4>
+          <h1>{workshop.title}</h1>
+          <h4>{workshop.subtitle}</h4>
         </Row>
         <Row className='description-row'>
-          <p>Um parágrafo maior aqui a respeito da oficina em questão.
-Não coloquei as outras oficinas porque serão iguais as seções delas.
-accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut 
-eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut </p>
-          <a href="">Veja mais abaixo</a>
+          <p>{workshop.text}</p>
         </Row>
       </Col>
       <Col className='img-col'>
         <Col className='column-one'>
-          <img src={img} className='image-one' />
-          <img src={img} className='image-two' />
+          <img src={img2} className='image-one' />
+          <img src={img3} className='image-two' />
         </Col>
         <Col className='column-two'>
-          <img src={img} className='image-three' />
+          <img src={img1} className='image-three' />
         </Col>
       </Col>
     </div>
