@@ -11,6 +11,7 @@ import FooterBaseComponent from './pages/components/footer-base-component/footer
 import psychoImage from './assets/images/health-section-psycho.png';
 import physioImage from './assets/images/health-section-physio.png';
 import About from './pages/about-us/about';
+import Workshop from './pages/workshop/workshop';
 
 const administrativoData = {
   title: 'Setor Administrativo da APAE SJE',
@@ -128,6 +129,7 @@ function App() {
         <Route path='/centro-dia' element={<Section data={centroDiaData}/>}/>
         <Route path='/saude' element={<Section data={saudeData}/>}/>
         <Route path='/about-us' element={<About/>}/>
+        <Route path='/oficinas' element={<Workshop/>} />
       </Routes>
       <FooterBaseComponent/>
     </BrowserRouter>
