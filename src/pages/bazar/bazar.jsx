@@ -13,16 +13,32 @@ import { useEffect } from "react";
 import { getAllProducts, getById } from "../../repositories/product-repository";
 import { useState } from "react";
 import ModalProduct from "./components/modal-product/modal-product";
+import { Toast } from "bootstrap";
+import ClipLoader from "react-spinners/ClipLoader";
 
 function Bazar() {
 
     const [products, setProducts] = useState({});
     const [product, setProduct] = useState(null);
     const [showModal, setShowModal] = useState(false);
+    const color = '#74B05C'
 
     useEffect(() => {
         loadProducts();
     }, []);
+
+    function Toast() {
+        return (
+          <Toast>
+            <Toast.Header>
+              <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
+              <strong className="me-auto">Bootstrap</strong>
+              <small>11 mins ago</small>
+            </Toast.Header>
+            <Toast.Body>Não foi possível carregar :(</Toast.Body>
+          </Toast>
+        );
+      }
 
     const loadProducts = async () => {
         const pr = await getAllProducts();
@@ -33,6 +49,7 @@ function Bazar() {
         const result = await getById(id);
         if (result.msg != null) {
             // TODO: Erro, interessante mostrar toast
+            Toast();
             return;
         }
 
@@ -49,7 +66,17 @@ function Bazar() {
     const gridProdutcs = () => {
         if (products == null) {
             // TODO: Talvez fosse interessante algum Spinner de carregamento
-            return <div></div>;
+            return(
+                <div className='loading-box'>
+                <ClipLoader
+                color={color}
+                loading={loading}
+                size={80}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+                />
+                </div> 
+            );
         }
 
         if (products.statusCode != 200) {
