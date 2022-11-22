@@ -27,7 +27,7 @@ const workshop3 = {
 
 const Workshop = (props) => {
   return (
-    <div className="main-container">
+    <div className="main-container-workshop">
     <Container fluid className="intro-container">
       <Row className="workshop-title">
         <Row className="title-row">
