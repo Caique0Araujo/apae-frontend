@@ -6,7 +6,7 @@
 .post{
     padding-top: 10px;
     width: 93%;
-    height: 220px;
+    height: 250px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -72,7 +72,7 @@
 
 @media screen and (orientation:portrait){
     .post{
-        width: 98%;
+        width: 94%;
         height: fit-content;
         display: flex;
         flex-direction: column-reverse;
@@ -93,21 +93,23 @@
 
         div:first-child{
             width: 100%;
-            white-space: nowrap;
+            /*white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis;
+            text-overflow: ellipsis;*/
             transition: 400ms;
             h1{
                 color: #666666;
                 font-weight: 500;
                 font-size: 20px;
                 padding-top: 10px;
+                text-align: start;
             }
             h2{
                 color: #666666;
                 font-weight: 300;
                 font-size: 17px;
                 padding-top: 10px;
+                display: none;
             }
         }
        

@@ -34,7 +34,7 @@ function MenuBarComponent() {
                 <h1>{click}</h1>
                     <Link className='link' to={'/'}><li>Início</li></Link>
                     <Link className='link' to={'/saiba-mais'}><li>Saiba mais</li></Link>
-                    <li>Oficinas</li>
+                    <Link className='link' to={'/oficinas'} ><li>Oficinas</li></Link>
                     <Link className='link' to={'/bazar'}><li>Bazar</li></Link>
                     <Link className='link'><span className='menu-dropdown'>
                         <li>Setores</li>
@@ -98,7 +98,8 @@ function MenuBarComponent() {
                                             <Link className='dropdown-itens'>Saúde</Link>
                                         </div>
                                     </li>
-                                    <li> <img src="src\assets\icons\people-icon.png" alt="" /> <h6 href="">Quem somos</h6></li>
+                                    
+                                    <Link className='link' to={'/about-us'}><li> <img src="src\assets\icons\people-icon.png" alt="" /> <h6 href="">Quem somos</h6></li></Link>
                                 </ul>
                             </div>
 
