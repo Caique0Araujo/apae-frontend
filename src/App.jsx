@@ -11,6 +11,7 @@ import FooterBaseComponent from './pages/components/footer-base-component/footer
 import psychoImage from './assets/images/health-section-psycho.png';
 import physioImage from './assets/images/health-section-physio.png';
 import AboutUs from './pages/about-us/about-us';
+import Info from './pages/info/info';
 
 const administrativoData = {
   title: 'Setor Administrativo da APAE SJE',
@@ -121,6 +122,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/noticia/:id' element={<News/>}/>
+        <Route path='/saiba-mais' element={<Info/>}/>
         <Route path='/bazar' element={<Bazar/>}/>
         <Route path='/administrativo' element={<Section data={administrativoData}/>}/>
         <Route path='/educacao' element={<Section data={educacaoData}/>}/>

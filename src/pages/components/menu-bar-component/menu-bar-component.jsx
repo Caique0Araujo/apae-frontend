@@ -33,7 +33,7 @@ function MenuBarComponent() {
                 <ul>
                 <h1>{click}</h1>
                     <Link className='link' to={'/'}><li>Início</li></Link>
-                    <li>Saiba mais</li>
+                    <Link className='link' to={'/saiba-mais'}><li>Saiba mais</li></Link>
                     <li>Oficinas</li>
                     <Link className='link' to={'/bazar'}><li>Bazar</li></Link>
                     <Link className='link'><span className='menu-dropdown'>
