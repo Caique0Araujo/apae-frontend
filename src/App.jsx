@@ -10,7 +10,6 @@ import MenuBarComponent from './pages/components/menu-bar-component/menu-bar-com
 import FooterBaseComponent from './pages/components/footer-base-component/footer-base-component';
 import psychoImage from './assets/images/health-section-psycho.png';
 import physioImage from './assets/images/health-section-physio.png';
-import AboutUs from './pages/about-us/about-us';
 import Info from './pages/info/info';
 import About from './pages/about-us/about';
 import Workshop from './pages/workshop/workshop';

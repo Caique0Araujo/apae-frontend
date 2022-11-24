@@ -1,5 +1,6 @@
 import './css/info.min.css';
 import InfoDonation from '../../assets/images/info_donation.png';
+import { InfoDonationComponent } from './components/info-donation-component/info-donation-component';
 
 export default function Info() {
     return (
@@ -18,9 +19,9 @@ export default function Info() {
                 </div>
 
                 <div className='donation-itens'>
-                    <div>Doação</div>
-                    <div>Doação</div>
-                    <div>Doação</div>
+                    <InfoDonationComponent title={'Doação em dinheiro'} description={'A forma ou as formas que a pessoa pode realizar esta doação. Exemplos são: Em dinheiro vivo e Pix.'}/>
+                    <InfoDonationComponent title={'Alguma outra'} description={'Não me lembro de outras formas, mas provavelmente tem, então fica aqui o card de exemplo.'}/>
+                    <InfoDonationComponent title={'Alguma outra'} description={'Não me lembro de outras formas, mas provavelmente tem, então fica aqui o card de exemplo.'}/>
                 </div>
             </div>
 
