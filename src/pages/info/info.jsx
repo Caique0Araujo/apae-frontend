@@ -1,6 +1,7 @@
 import './css/info.min.css';
 import InfoDonation from '../../assets/images/info_donation.png';
 import { InfoDonationComponent } from './components/info-donation-component/info-donation-component';
+import { InstructionDonationComponent } from './components/instruction-donation-component/instruction-donation-component';
 
 export default function Info() {
     return (
@@ -25,13 +26,13 @@ export default function Info() {
                 </div>
             </div>
 
-            <div>
+            <div className='instruction-content'>
                 <h3>Instruçoes para as doações</h3>
 
-                <div>
-                    <div>card</div>
-                    <div>card</div>
-                    <div>card</div>
+                <div className='instruction-itens'>
+                    <InstructionDonationComponent title={'Doações em dinheiro'} description={'Para realizar uma doação via Pix escaneie o código QR acima ou use a chave: 00000000000.<br/><br/>Para realizar uma doação em dinheiro vivo leve ate tal lugar e entregue tal pessoa.'}/>
+                    <InstructionDonationComponent title={'Doações em dinheiro'} description={'Para realizar uma doação via Pix escaneie o código QR acima ou use a chave: 00000000000.<br/><br/>Para realizar uma doação em dinheiro vivo leve ate tal lugar e entregue tal pessoa.'}/>
+                    <InstructionDonationComponent title={'Doações em dinheiro'} description={'Para realizar uma doação via Pix escaneie o código QR acima ou use a chave: 00000000000.<br/><br/>Para realizar uma doação em dinheiro vivo leve ate tal lugar e entregue tal pessoa.'}/>
                 </div>
             </div>
         </div>
