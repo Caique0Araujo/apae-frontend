@@ -12,7 +12,6 @@
         padding-top: 100px
         padding-left: 3%
         width: 45%
-        background-color: black
 
         h2
             font-size: 70px
@@ -71,22 +70,79 @@
 @media screen and (orientation: portrait) 
 
     .main-header 
-        height: 120vh
+        display: flex
+        flex-direction: row
+        height: 700px
+        width: 100%
         background-image: url('../../../assets/images/info_banner_background.png')
-        background-size: cover
+        background-color: white
+        background-size: contain
+        background-repeat: no-repeat
+        background-position-y: bottom
         overflow-x: hidden
+        //background-color: blue
+        margin: 0
+        padding: 0
 
-    .main-content
-        padding-top: 100px
-        padding-left: 3%
-        width: 45%
+        .main-content
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: start
+            padding-left: 15px
+            padding-right: 15px
+        
+            h2
+                text-align: center
+                color:#74B05C
+                font-weight:500
+                font-size: 2rem
+                margin-top: 0px
+                margin-bottom: 60px
 
-        h2
-            font-size: 70px
-            color: #74B05C
-            margin-bottom: 5%
+            p
+                text-align: center
+                color:#666
+                font-weight:300
+                font-size: 1.2rem
+                width: 100%
+    
+    .donation-content
+        height: 100vh
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 5%
+        //margin-inline: 3%
+        //background-color: black
 
-        p
-            color: #666666
-            text-align: justify
-            font-size: 18px
+        .donation-info
+            width: 100%
+            margin: 0
+            display: flex
+            justify-content: center
+            //background-color: red
+
+            h3
+                width: 100%
+                text-align: start
+                color:#666
+                font-weight:500
+                font-size: 2rem
+                margin-top: 20px
+                margin-bottom: 40px
+
+            img
+                height: 20%
+                display: none
+
+        .donation-itens
+            width: 94%
+            height: 80vh
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+        
+            
