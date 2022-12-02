@@ -1,8 +1,9 @@
 .intruction-donation-component
     border-radius: 20px 20px 0px 0px
-    flex: 1
+    //flex: 1
     overflow: hidden
-    margin-inline: 3%
+    margin-bottom: 20px
+    height: fit-content
 
     .image-container
         background-color: #359BD6
@@ -19,7 +20,26 @@
         font-size: 25px
         margin-left: 7%
         margin-bottom: 10%
+        padding-top: 10px
+        padding-left: 10px
+        padding-right: 10px
 
     .card-description
         color: #666666
         font-weight: 300px
+        padding-left: 10px
+        padding-right: 10px
+
+.intruction-donation-component:hover
+    transition: 400ms
+    box-shadow: rgba(204, 204, 204, 0.5) 0px 0px 5px 1px
+    border-radius: 20px
+    transform: scale(1.005)
+
+@media screen and(orientation:landscape) 
+    .intruction-donation-component
+        width: 32%
+
+@media screen and (max-width: 700px) 
+    .card-description
+        text-align: justify

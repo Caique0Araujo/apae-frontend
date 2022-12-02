@@ -67,7 +67,7 @@
         justify-content: space-between
 
 
-@media screen and (orientation: portrait) 
+@media screen and (orientation : portrait) 
 
     .main-header 
         display: flex
@@ -80,7 +80,6 @@
         background-repeat: no-repeat
         background-position-y: bottom
         overflow-x: hidden
-        //background-color: blue
         margin: 0
         padding: 0
 
@@ -114,16 +113,14 @@
         display: flex
         flex-direction: column
         align-items: center
-        margin-top: 5%
-        //margin-inline: 3%
-        //background-color: black
-
+        margin: 0
+        margin-top: 10%
+        
         .donation-info
             width: 100%
             margin: 0
             display: flex
             justify-content: center
-            //background-color: red
 
             h3
                 width: 100%
@@ -133,6 +130,7 @@
                 font-size: 2rem
                 margin-top: 20px
                 margin-bottom: 40px
+                padding-left: 2%
 
             img
                 height: 20%
@@ -145,4 +143,82 @@
             flex-direction: column
             justify-content: space-evenly
         
+    .instruction-content
+        display: flex
+        flex-direction: column
+        padding-bottom: 50px
+
+        h3
+            width: 100%
+            text-align: start
+            color:#666
+            font-weight:500
+            font-size: 2rem
+            margin-top: 20px
+            margin-bottom: 40px
+            padding-left: 2%
+
+        .instruction-itens
+            flex-direction: column
+            display: flex
+            justify-content: space-between
             
+
+@media screen and (max-width: 800px) 
+    .donation-content
+        height: 100vh
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: 0
+        margin-top: 10%
+        margin-bottom: 8vh
+        
+        .donation-info
+            width: 100%
+            margin: 0
+            display: flex
+            justify-content: center
+
+            h3
+                width: 100%
+                text-align: start
+                color:#666
+                font-weight:500
+                font-size: 2rem
+                margin-top: 20px
+                margin-bottom: 40px
+                padding-left: 2%
+
+            img
+                height: 20%
+                display: none
+
+        .donation-itens
+            width: 94%
+            height: 80vh
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+
+@media screen and (max-width: 650px) 
+    .instruction-content
+    display: flex
+    flex-direction: column
+    padding-bottom: 50px
+
+    h3
+        width: 100%
+        text-align: start
+        color:#666
+        font-weight:500
+        font-size: 2rem
+        margin-top: 20px
+        margin-bottom: 40px
+        padding-left: 2%
+
+    .instruction-itens
+        flex-direction: column
+        display: flex
+        justify-content: space-between
