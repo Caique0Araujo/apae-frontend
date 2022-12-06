@@ -85,8 +85,9 @@ function MenuBarComponent() {
                             <div>
                                 <ul>
                                     <Link className='link' to={'/'}><li> <img src="src\assets\icons\home icon.png" alt="" /> <h6 href="">Início</h6></li></Link>
-                                    <li> <img src="src\assets\icons\info-icon.png" alt="" /> <h6 href="">Saiba mais</h6></li>
-                                    <li> <img src="src\assets\icons\gear-icon.png" alt="" /> <h6 href="">Oficinas</h6></li>
+                                    <Link className='link' to={'/saiba-mais'}> <li><img src="src\assets\icons\info-icon.png" alt="" /> <h6 href="">Saiba mais</h6></li></Link>
+                                    <Link className='link' to={'/oficinas'}> <li><img src="src\assets\icons\gear-icon.png" alt="" /> <h6 href="">Oficinas</h6></li></Link>
+                                    
                                     <Link className='link' to={'/bazar'}><li> <img src="src\assets\icons\bazaar-icon.png" alt="" /> <h6 href="">Bazar</h6></li></Link>
                                     <li className='dropdown'> 
                                         <img src="src\assets\icons\section-icon.png" alt="" /> <h6 href="">Setores</h6>
