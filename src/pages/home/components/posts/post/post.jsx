@@ -15,7 +15,7 @@ export default function Post(props){
                 </IntlProvider>
             </div>
             <div>
-                <img src="src\assets\images\pexels-mentatdgt-1336873.jpg" alt="" />
+                <img src={`data:image/png;base64,${props.buffer}`} alt="" />
             </div>
         </div>
     )

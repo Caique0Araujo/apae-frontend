@@ -48,12 +48,12 @@ function Bazar() {
     const showProduct = async (id) => {
         const result = await getById(id);
         if (result.msg != null) {
-            // TODO: Erro, interessante mostrar toast
             Toast();
             return;
         }
 
         const productInfo = result.data;
+        console.log(productInfo);
         setProduct(productInfo);
         setShowModal(true);
     }
@@ -65,16 +65,15 @@ function Bazar() {
 
     const gridProdutcs = () => {
         if (products == null) {
-            // TODO: Talvez fosse interessante algum Spinner de carregamento
             return(
                 <div className='loading-box'>
-                <ClipLoader
-                color={color}
-                loading={loading}
-                size={80}
-                aria-label="Loading Spinner"
-                data-testid="loader"
-                />
+                    <ClipLoader
+                        color={color}
+                        loading={loading}
+                        size={80}
+                        aria-label="Loading Spinner"
+                        data-testid="loader"
+                    />
                 </div> 
             );
         }
@@ -93,6 +92,7 @@ function Bazar() {
                             img={val.image_path} 
                             price={val.price} 
                             title={val.name}
+                            buffer={val.image_path}
                             onClick={showProduct}
                         />
                     )

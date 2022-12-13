@@ -65,7 +65,7 @@ export default function News(props) {
             <div className='title-box'>
                 <h1>{news.title}</h1>
             </div>
-            <img src="../../src/assets/images/pexels-mentatdgt-1336873.jpg" alt="" />
+            <img src={`data:image/png;base64,${news.image_path}`} alt="" />
             <div>
                 <p>{news.text}</p>
                 <IntlProvider locale='pt-BR'>

@@ -50,11 +50,11 @@ export default function Posts(){
             return(
                 <div className='loading-box'>
                 <ClipLoader
-                color={color}
-                loading={loading}
-                size={80}
-                aria-label="Loading Spinner"
-                data-testid="loader"
+                    color={color}
+                    loading={loading}
+                    size={80}
+                    aria-label="Loading Spinner"
+                    data-testid="loader"
                 />
                 </div> 
             );
@@ -68,6 +68,7 @@ export default function Posts(){
                             key={val.id_news} 
                             title={val.title} 
                             description={val.text} 
+                            buffer={val.image_path}
                             date={val.created_at_utc}
                             onClick={onClickInPost}
                             id={val.id_news}
