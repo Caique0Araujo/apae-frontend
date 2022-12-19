@@ -5,9 +5,13 @@ import MenuBarComponent from '../components/menu-bar-component/menu-bar-componen
 import FooterBaseComponent from '../components/footer-base-component/footer-base-component';
 import Posts from './components/posts/posts';
 
+import { useState } from 'react';
+
 export default function Home(){
+    
     return (
         <div className='main-box-home'>
+           
             <Intro/>
             <Posts/>
         </div>

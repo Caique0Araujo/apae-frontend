@@ -2,6 +2,7 @@ import './css/menu-bar.min.css'
 import './css/menu-bar-mobile.min.css'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ModalContacts from '../../home/components/modal-contacts/modal-contacts';
 
 function MenuBarComponent() {
 
@@ -23,9 +24,19 @@ function MenuBarComponent() {
     var mediaQuerie = window.matchMedia("(orientation: portrait)");
     mediaQuerie.addListener(handleOrientationChange);
 
+    const [showModal, setShowModal] = useState(false);
+
+    const closeModal = () => {
+        setShowModal(false);
+    }
+
     if(orientation == 0){
         return (
             <div className='header'>
+                 <ModalContacts
+                    visible={showModal}
+                    onHide={closeModal}
+                 />
                 <div>
                     <img src="src\assets\images\LOGO-APAE-BRASIL-01.png" alt="" />
                     <h4>APAE</h4>
@@ -50,7 +61,9 @@ function MenuBarComponent() {
                     <Link className='link' to={'/about-us'}><li>Quem somos</li></Link>
                 </ul>
                 <div>
-                    <button>Fale conosco</button>
+                    <button onClick={() => {
+                        setShowModal(true)
+                    }}>Fale conosco</button>
                 </div>
             </div>
         );
@@ -58,6 +71,10 @@ function MenuBarComponent() {
     else{
         return(
             <>
+                <ModalContacts
+                    visible={showModal}
+                    onHide={closeModal}
+                 />
                 {click === false
                     ? <div className='closed-drawer'>
                         <button className='drawer-button' 
@@ -105,7 +122,10 @@ function MenuBarComponent() {
                             </div>
 
                             <div>
-                                <button>fale conosco</button>
+                                <button onClick={() => {
+                                    setShowModal(true)
+                                    setClick(false)
+                                }}>fale conosco</button>
                             </div>
                         </div>
 
