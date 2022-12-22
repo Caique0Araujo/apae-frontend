@@ -109,11 +109,11 @@ function MenuBarComponent() {
                                     <li className='dropdown'> 
                                         <img src="src\assets\icons\section-icon.png" alt="" /> <h6 href="">Setores</h6>
                                         <div className='dropdown-content'>
-                                            <Link className='dropdown-itens'>Administrativo</Link>
-                                            <Link className='dropdown-itens'>Educação</Link>
-                                            <Link className='dropdown-itens'>Assistência social</Link>
-                                            <Link className='dropdown-itens'>Centro DIA</Link>
-                                            <Link className='dropdown-itens'>Saúde</Link>
+                                            <Link to={'/administrativo'} className='dropdown-itens'>Administrativo</Link>
+                                            <Link to={'/educacao'} className='dropdown-itens'>Educação</Link>
+                                            <Link to={'/assistencia-social'} className='dropdown-itens'>Assistência social</Link>
+                                            <Link to={'/centro-dia'} className='dropdown-itens'>Centro DIA</Link>
+                                            <Link to={'/saude'} className='dropdown-itens'>Saúde</Link>
                                         </div>
                                     </li>
                                     

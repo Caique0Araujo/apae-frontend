@@ -124,14 +124,15 @@ function Bazar() {
                         <p className="subtitle right">Falar como funciona o bazar, como começou talvez. Falar como doar e como comprar. Accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In </p>
                     
                         <Row className='row-card'>
-                            <OutlinedButtonComponent text='Doar'/>
-                            <ButtonComponent text='Comprar'/>
+                            <a href="#doar"><OutlinedButtonComponent text='Doar'/></a>
+                            <a href="#comprar"><ButtonComponent text='Comprar'/></a>
+                            
                         </Row>
                     </Col>
                 </Row>
             </Container>
 
-            <Container fluid className='section-page'>
+            <Container fluid className='section-page' id="doar">
                 <Row className="row-card">
                     <Col>
                         <h4 className="title-card">Como doar algo para o bazar?</h4>
@@ -169,7 +170,7 @@ function Bazar() {
                 </Row>
             </Container>
 
-            <Container fluid className='section-page'>
+            <Container fluid className='section-page' id="comprar">
                 <Row className='grid-row'>
                     <h3 className='grid-title'>Produtos do bazar</h3>
                 </Row>

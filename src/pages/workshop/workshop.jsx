@@ -4,7 +4,7 @@ import ButtonComponent from "../components/button-component/button-component";
 import image from '../../assets/images/workshop-img-girl.png';
 import imageSettings from '../../assets/images/settings-img.png';
 import WorkshopCard from "./components/workshop-card";
-
+import { Link } from 'react-router-dom';
 
 const workshop1 = {
   title: 'Oficina de culinária',
@@ -36,7 +36,8 @@ const Workshop = (props) => {
         </h1>
         </Row>
         <Row className="button-row">
-          <ButtonComponent text='Descubra'/>
+          <a href="#pra-la"><ButtonComponent text='Descubra'/></a>
+          
         </Row>
       </Row>
       <Row className="workshop-intro">
@@ -53,7 +54,7 @@ const Workshop = (props) => {
         </Col>
       </Row>
     </Container>
-    <Container fluid className="workshops-container">
+    <Container id="pra-la" fluid className="workshops-container">
       <WorkshopCard workshop = {workshop1} />
       <WorkshopCard workshop = {workshop2}/>
       <WorkshopCard workshop = {workshop3}/>

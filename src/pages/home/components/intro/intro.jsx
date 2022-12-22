@@ -2,6 +2,8 @@
 import '../css/intro.min.css'
 import '../../../../css/DefaultStyle.min.css';
 import ButtonComponent from "../../../components/button-component/button-component";
+import { Link } from 'react-router-dom';
+import Info from '../../../info/info';
 export default function Intro(){
     return(
         <nav className='main-box-intro'>
@@ -12,7 +14,8 @@ export default function Intro(){
                     ser uma organização social, cujo objetivo principal é 
                     promover a atenção integral à pessoa com deficiência
                 </h2>
-                <ButtonComponent text='Saiba mais'/>
+                <Link to={'saiba-mais'}><ButtonComponent text='Saiba mais'/></Link>
+                
             </div>
 
             <div>
