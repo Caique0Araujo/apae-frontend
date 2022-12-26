@@ -31,3 +31,42 @@
             text-align: center
     .grid
         justify-content: center
+
+    
+
+
+@media only screen and (max-width: 1000px)
+    .text-box
+        //background-color: red
+        div:last-child
+            flex-direction: column
+            align-items: center
+            justify-content: space-evenly
+            height: 130px
+
+@media screen and (orientation: portrait) 
+    .intro-box
+       flex-direction: column
+       justify-content: start
+       //background-color: red
+       height: max-content
+
+       .logo-box
+            width: 100%
+            align-items: flex-start
+            height: fit-content
+            margin-bottom: 30px
+
+       .text-box
+            width: 100%
+            justify-content: start
+
+            div:first-child
+                width: 100%
+                h2
+                    text-align: center
+                    font-size: 2rem
+                p
+                    text-align: center
+                    font-size: 1.2rem
+

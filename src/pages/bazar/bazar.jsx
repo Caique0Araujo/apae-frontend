@@ -113,7 +113,7 @@ function Bazar() {
 
             
 
-            <Container fluid className='section-page'>
+            {/*<Container fluid className='section-page'>
                 <Row>
                     <Col className='logo-bazar'>
                         <img className='logo-bazar' src={bazar}/>
@@ -130,7 +130,23 @@ function Bazar() {
                         </Row>
                     </Col>
                 </Row>
-            </Container>
+    </Container>*/}
+
+            <div className="intro-box">
+                <div className="logo-box">
+                    <img src={bazar} alt="" />
+                </div>
+                <div className="text-box">
+                    <div>
+                        <h2>Conheça o bazar da APAE</h2>
+                        <p>Falar como funciona o bazar, como começou talvez. Falar como doar e como comprar. Accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In</p>
+                    </div>
+                    <div>
+                        <a href="#doar"><OutlinedButtonComponent text='Doar'/></a>
+                        <a href="#comprar"><ButtonComponent text='Comprar'/></a>
+                    </div>
+                </div>
+            </div>
 
             <Container fluid className='section-page' id="doar">
                 <Row className="row-card">
