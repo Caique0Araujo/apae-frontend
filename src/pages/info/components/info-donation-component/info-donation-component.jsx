@@ -1,11 +1,10 @@
-import DonationInfo from '../../../../assets/images/donation_icon.png';
 import './css/InfoDonation.min.css';
 
 export function InfoDonationComponent(props) {
     return (
         <div className='info-donation'>
             <div>
-                <img src={DonationInfo}/>
+                <img src={props.icon}/>
             </div>
             <div className='info-donation-container'>
                 <h4>{props.title}</h4>

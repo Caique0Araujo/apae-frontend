@@ -111,27 +111,6 @@ function Bazar() {
                 onHide={closeModal}
             />
 
-            
-
-            {/*<Container fluid className='section-page'>
-                <Row>
-                    <Col className='logo-bazar'>
-                        <img className='logo-bazar' src={bazar}/>
-                    </Col>
-                    
-                    <Col className='title-col'>
-                        <h2 className='title right'>Conheça o bazar da APAE</h2>
-                        <p className="subtitle right">Falar como funciona o bazar, como começou talvez. Falar como doar e como comprar. Accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In </p>
-                    
-                        <Row className='row-card'>
-                            <a href="#doar"><OutlinedButtonComponent text='Doar'/></a>
-                            <a href="#comprar"><ButtonComponent text='Comprar'/></a>
-                            
-                        </Row>
-                    </Col>
-                </Row>
-    </Container>*/}
-
             <div className="intro-box">
                 <div className="logo-box">
                     <img src={bazar} alt="" />
@@ -139,7 +118,7 @@ function Bazar() {
                 <div className="text-box">
                     <div>
                         <h2>Conheça o bazar da APAE</h2>
-                        <p>Falar como funciona o bazar, como começou talvez. Falar como doar e como comprar. Accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In</p>
+                        <p>O BAZAR DA APAE surgiu com a finalidade de comercializar a parte excedente de doações recebidas, visando complementar a receita líquida necessária para a manutenção da Instituição. </p>
                     </div>
                     <div>
                         <a href="#doar"><OutlinedButtonComponent text='Doar'/></a>
@@ -151,37 +130,37 @@ function Bazar() {
             <Container fluid className='section-page' id="doar">
                 <Row className="row-card">
                     <Col>
-                        <h4 className="title-card">Como doar algo para o bazar?</h4>
-                        <p className="description-card">Dizer aqui como deve ser feita a doação.<br/>eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. </p>
+                        <h4 className="title-card">Como funciona</h4>
+                        <p className="description-card">No Bazar funciona também a fábrica de vassouras de garrafas pet.</p>
                     </Col>
 
                     <Col>
-                        <h4 className="title-card right">O que posso doar?</h4>
-                        <p className="description-card right">Dizer aqui quais tipos de coisas podem ser doadas.<br/>eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. </p>
-                    </Col>
-                </Row>
-
-                <Row className="row-card">
-                    <Col>
-                        <h4 className="title-card">Qual o local para fazer a doação?</h4>
-                        <p className="description-card">Dizer aqui o local para fazer a doação<br/>eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. </p>
-                    </Col>
-
-                    <Col>
-                        <h4 className="title-card right">Qualquer outra informação relevante</h4>
-                        <p className="description-card right">eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. </p>
+                        <h4 className="title-card right">Tipos de produtos doados ?</h4>
+                        <p className="description-card right">O BAZAR DA APAE recebe todos os tipos de doações. Como peças básicas do vestuário, bolsas, sapatos, roupas de cama, mesa e banho, utensílios domésticos, ferramentas, materiais escolares, brinquedos, móveis, etc. <br/>Recebemos também a doação de garrafas Pet, que são utilizadas para a confecção de vassouras.</p>
                     </Col>
                 </Row>
 
                 <Row className="row-card">
                     <Col>
-                        <h4 className="title-card">Qualquer outra informação relevante</h4>
-                        <p className="description-card">eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum.</p>
+                        <h4 className="title-card">Localização</h4>
+                        <p className="description-card">Localização: Rua Benedito Valadares nº 240, em frente a Padaria Pão Gostoso.</p>
                     </Col>
 
                     <Col>
-                        <h4 className="title-card right">Qualquer outra informação relevante</h4>
-                        <p className="description-card right">eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. </p>
+                        <h4 className="title-card right">Horário de funcionamento</h4>
+                        <p className="description-card right">Horário de funcionamento: 10h às 17h, segunda a sexta-feira.</p>
+                    </Col>
+                </Row>
+
+                <Row className="row-card">
+                    <Col>
+                        <h4 className="title-card">Como comprar</h4>
+                        <p className="description-card">Vendas somente em dinheiro na loja física.</p>
+                    </Col>
+
+                    <Col>
+                        <h4 className="title-card right">Como doar</h4>
+                        <p className="description-card right">Levando diretamente ao Bazar, na sede da APAE, ou ligando para a APAE no número 33 3412 1195 que buscamos sua doação.</p>
                     </Col>
                 </Row>
             </Container>

@@ -9,10 +9,7 @@ export default function Intro(){
         <nav className='main-box-intro'>
             <div>
                 <h1 className='title'>Conheça melhor a APAE</h1>
-                <h2 className='subtitle'>A Apae - Associação de Pais e Amigos dos Excepcionais 
-                    nasceu em 1954, no Rio de Janeiro. Caracteriza-se por 
-                    ser uma organização social, cujo objetivo principal é 
-                    promover a atenção integral à pessoa com deficiência
+                <h2 className='subtitle'>As Apaes - Associações de Pais e Amigos dos Excepcionais nasceu em 1954, no Rio de Janeiro. É organização social, sem fins lucrativos, que têm por objetivo principal promover a atenção integral à pessoa com deficiência, prioritariamente aquela com deficiência intelectual e múltipla.
                 </h2>
                 <Link to={'saiba-mais'}><ButtonComponent text='Saiba mais'/></Link>
                 

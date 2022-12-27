@@ -24,12 +24,12 @@ export default function ModalContacts(props){
   
             <div>
               <div>
-                <h3>Telefones</h3>
-                <p>(33)2112-3232<br/>(11)91245-8585</p>
-                <h3>Emails</h3>
-                <p>12345678@abcde.com<br/>qwerty123#asdfcom</p>
+                <h3>Telefone</h3>
+                <p>(33) 3412-1195</p>
+                <h3>Email</h3>
+                <p>apae.sjevangelista@yahoo.com.br</p>
                 <h3>Endereço</h3>
-                <p>Rua Ramon Dino, nº13<br/>Bairro Jardin Trembolona<br/>Marobalândia, AC, Brasil</p>
+                <p>Rua Duval Pimenta, nº 100, Centro <br/> São João Evangelista <br/> MG CEP 39.705-000</p>
               </div>
               
             </div>

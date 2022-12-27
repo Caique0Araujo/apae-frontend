@@ -22,16 +22,20 @@ const administrativoData = {
   sub: [
     {
       key: 0,
-      title: 'Ditadura',
-      subtitle: 'Algo sobre isto para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-      text: 'Um parágrafo maior aqui a respeito do serviço em questão. eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
+      title: 'Como funciona',
+      subtitle: 'O setor administrativo da APAE engloba a tesouraria e a secretaria escolar. A tesouraria cuida dos aspectos financeiros e contábeis da APAE. A Secretaria, por sua vez, cuida da administração da APAE como um todo, incluindo os setores de ensino, saúde e assistência social, e é responsável pela organização e ao bom funcionamento do fluxo de trabalho dos setores. De modo geral, a secretaria é responsável por todos os eventos burocráticos e legais de funcionamento da instituição.',
       image: psychoImage
     },
     {
       key: 1,
-      title: 'Como funciona',
-      subtitle: 'Algo sobre isto para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-      text: 'Um parágrafo maior aqui a respeito do serviço em questão. eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
+      title: 'Secretaria',
+      subtitle: 'A secretaria é responsável pela agenda de atendimento das clínicas, matrículas e tranferência dos alunos da APAE, o agendamento de avaliações, expedição de documentos, atendimento à comunidade, organização dos arquivos, protocolos e registros dos alunos, prestação de contas e recebimento das doações de bens diversos.',
+      image: physioImage
+    },
+    {
+      key: 2,
+      title: 'Tesouraria',
+      subtitle: 'O setor de tesouraria é responsável pela administração dos bens financeiros da APAE, do pagamento de contas e do recebimento das doações em dinheiro. Também é responsável por fazer o controle contábil de um modo geral.',
       image: physioImage
     }
   ],
@@ -45,16 +49,14 @@ const educacaoData = {
   sub: [
     {
       key: 0,
-      title: 'Ensino Médio',
-      subtitle: 'Algo sobre isto para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-      text: 'Um parágrafo maior aqui a respeito do serviço em questão. eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
+      title: 'FASE I - ENSINO FUNDAMENTAL',
+      subtitle: 'Atende educandos com deficiência intelectual e múltipla que necessitam de apoio pervasivo, oferece programas educacionais especializado com currículo adaptado, educação física adaptada, visando o desenvolvimento global dos alunos e suas potencialidades nos aspectos: intelectual, sócio-afetivo, físico, motor, promovendo ações da família e da comunidade e inclusão social. O sistema de trabalho envolve Currículo Funcional e Natural, integração sensorial, comunicação alternativa, projetos, atividades para o desenvolvimento de habilidades sociais, adaptativas e atividades de vida diária e prática com apoio terapêutico de equipe multidisciplinar, atuando como agente facilitador no processo ensino-aprendizagem.',
       image: psychoImage
     },
     {
       key: 1,
-      title: 'Ensino Fundamental',
-      subtitle: 'Algo sobre isto para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-      text: 'Um parágrafo maior aqui a respeito do serviço em questão. eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
+      title: 'FASE II - SÓCIO-EDUCACIONAL',
+      subtitle: 'O atendimento socioeducacionais é ofertado aos alunos que apresentam necessidades especificas dado ao grau de comprometimento físico e intelectual, onde as atividades realizadas proporciona o desenvolvimento das habilidades de vida prática e diária, utilizando o Currículo Funcional Natural realizando adaptações curriculares adequadas promovendo sua independência e autonomia. A Apae oferta educação infantil, Ensino Fundamental, Anos Iniciais de 1º ao 5º ano, Educação de Jovens Adultos - Anos Iniciais e Finais. Nossa equipe da educação é composta por profissionais capacitados e especializados em educação inclusiva e especial com experiência na área. O trabalho educacional desenvolvido pela Apae é dinâmico, criativo, com apostilas pedagógicas individualizadas, visando um ensino de qualidade aos nossos alunos com deficiência intelectual e múltiplas.',
       image: physioImage
     }
   ],
@@ -68,9 +70,8 @@ const assistenciaSocialData = {
   sub: [
     {
       key: 0,
-      title: 'Sei la, assistência?',
-      subtitle: 'Algo sobre isto para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-      text: 'Um parágrafo maior aqui a respeito do serviço em questão. eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
+      title: 'Sobre',
+      subtitle: 'A atuação do Assistente Social na APAE de São João Evangelista/MG está voltada ao atendimento às pessoas com deficiência e/ou transtorno do espectro autista e suas famílias, com abordagem nas áreas da Assistência Social, Educação e Saúde; a fim de contribuir para o acesso aos programas, projetos e demais políticas públicas existentes na Rede Socioassistencial. A identificação das famílias com o setor do Serviço Social faz com que as mais diferentes demandas nos sejam trazidas, desta forma é de suma importância o acolhimento e a escuta qualificada. A partir disto são realizados os encaminhamentos necessários, tanto externos quanto para os demais profissionais da equipe multidisciplinar. O Assistente Social tem como objetivo no trabalho na APAE/SJE estreitar as relações família-instituição cada vez mais, entendendo que o usuário não é um ser dissociado da família ou comunidade. A ação do Serviço Social possibilita auxílio na promoção das famílias e usuários através de atendimentos socioeducativos e autodefensoria. É papel fundamental de o Assistente Social conscientizar as famílias e a sociedade que a pessoa com deficiência intelectual tem direitos e deveres como todo cidadão brasileiro.',
       image: psychoImage
     }
   ],
@@ -84,9 +85,26 @@ const centroDiaData = {
   sub: [
     {
       key: 0,
-      title: 'Como funciona',
-      subtitle: 'Algo sobre isto para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-      text: 'Um parágrafo maior aqui a respeito do serviço em questão. eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
+      title: 'O que é?',
+      subtitle: 'É um espaço de convivência que tem atividades desenvolvidas em diversas ambiências e é direcionado a jovens e adultos com deficiência intelectual e múltipla que necessitam de apoios extensivos e generalizados. Sua finalidade é promover a autonomia, a inclusão social e a melhoria da qualidade de vida dos usuários, visando o reconhecimento do seu potencial, e aaceitação e valorização da diversidade. As ações do Centro Dia são diversificadas e abrangem atividades culturais e de lazer favorecendo a troca de experiências. Todas as intervenções realizadas pela APAE-SJE têm o propósito de manter e/ou desenvolver as habilidades dos usuários, fortalecendo seu protagonismo e reduzindo a exclusão social, o isolamento, a discriminação e o preconceito. A organização das atividades em ambiências, visam proporcionar vivências sociais, culturais e de lazer, além de desenvolver, através da arte e de situações reais, competências, habilidades e atitudes que promovam a autonomia e independência do usuário.',
+      image: psychoImage
+    },
+    {
+      key: 1,
+      title: 'AMBIÊNCIA BEM VIVER',
+      subtitle: 'A ambiência “Bem Viver” desenvolve atividades cognitivas e de iniciação em artes manuais, com o objetivo de estimular os participantes a interagir, observar, experimentar e explorar diversos materiais e técnicas, buscando sempre identificar e valorizar o conhecimento prévio, o desejo, a tolerância e o potencial criativo de cada pessoa.',
+      image: psychoImage
+    },
+    {
+      key: 2,
+      title: 'AMBIÊNCIA CORPO E MOVIMENTO',
+      subtitle: 'A ambiência “Corpo e Movimento” visa proporcionar uma aprendizagem por meio de atividades corporais e físicas de baixo impacto, circuitos, jogos rítmicos e teatrais que exploram os movimentos corporais, o equilíbrio e o desenvolvimento do potencial cinestésico, criativo e artístico dos usuários.',
+      image: psychoImage
+    },
+    {
+      key: 3,
+      title: 'AMBIÊNCIA “VIVÊNCIAS”',
+      subtitle: 'A ambiência “Vivências” compreende atividades da vida diária, da vida prática e de interação familiar e comunitária, enfatizando experiências e vivências relacionadas às questões do dia-a-dia, sociais favorecendo uma aprendizagem significativa de formação do cidadão. Familiares dos usuários e pessoas da comunidade podem participar desta Oficina, desde que seja agendado previamente.',
       image: psychoImage
     }
   ],
@@ -100,16 +118,14 @@ const saudeData = {
   sub: [
     {
       key: 0,
-      title: 'Psicologia',
-      subtitle: 'Algo sobre isto para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-      text: 'Um parágrafo maior aqui a respeito do serviço em questão. eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
+      title: 'FASE I - ENSINO FUNDAMENTAL',
+      subtitle: 'Atende educandos com deficiência intelectual e múltipla que necessitam de apoio pervasivo, oferece programas educacionais especializado com currículo adaptado, educação física adaptada, visando o desenvolvimento global dos alunos e suas potencialidades nos aspectos: intelectual, sócio-afetivo, físico, motor, promovendo ações da família e da comunidade e inclusão social. O sistema de trabalho envolve Currículo Funcional e Natural, integração sensorial, comunicação alternativa, projetos, atividades para o desenvolvimento de habilidades sociais, adaptativas e atividades de vida diária e prática com apoio terapêutico de equipe multidisciplinar, atuando como agente facilitador no processo ensino-aprendizagem.',
       image: psychoImage
     },
     {
       key: 1,
-      title: 'Fisioterapia',
-      subtitle: 'Algo sobre isto para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-      text: 'Um parágrafo maior aqui a respeito do serviço em questão. eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
+      title: 'FASE II - SÓCIO-EDUCACIONAL',
+      subtitle: 'O atendimento socioeducacionais é ofertado aos alunos que apresentam necessidades especificas dado ao grau de comprometimento físico e intelectual, onde as atividades realizadas proporciona o desenvolvimento das habilidades de vida prática e diária, utilizando o Currículo Funcional Natural realizando adaptações curriculares adequadas promovendo sua independência e autonomia. A Apae oferta educação infantil, Ensino Fundamental, Anos Iniciais de 1º ao 5º ano, Educação de Jovens Adultos - Anos Iniciais e Finais. Nossa equipe da educação é composta por profissionais capacitados e especializados em educação inclusiva e especial com experiência na área. O trabalho educacional desenvolvido pela Apae é dinâmico, criativo, com apostilas pedagógicas individualizadas, visando um ensino de qualidade aos nossos alunos com deficiência intelectual e múltiplas.',
       image: physioImage
     }
   ],

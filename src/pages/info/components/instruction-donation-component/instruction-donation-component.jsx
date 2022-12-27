@@ -1,11 +1,10 @@
-import QrCode from '../../../../assets/images/qrcode.png';
 import './css/InstructionDonation.min.css';
 
 export function InstructionDonationComponent(props) {
     return (
         <div className='intruction-donation-component'>
             <div className='image-container'>
-                <img src={QrCode}/>
+                <img src={props.icon}/>
             </div>
             <div>
                 <p className='card-title'>{props.title}</p>
