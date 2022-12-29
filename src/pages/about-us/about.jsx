@@ -1,4 +1,19 @@
 import './css/about-us.min.css';
+import AlcioneGolcalvesAlves from '../../assets/pictures/alcione_goncalves_alves.jpg';
+import ClaudianeCoelhoCruz from '../../assets/pictures/claudiane_coelho_cruz.jpg';
+import GessicaSouzaNascimento from '../../assets/pictures/gessica_souza_nascimento.jpg';
+import IlmaSantaRitaSantosTeixeira from '../../assets/pictures/ilma_santa_rita_santos_teixeira.png';
+import IzabelaBraga from '../../assets/pictures/izabela_braga.jpeg';
+import JoaoAparecidoAlmeida from '../../assets/pictures/joao_aparecido_almeida.jpg';
+import JulianaMarquenyBrandao from '../../assets/pictures/juliana_marqueny_brandao.jpg';
+import KeliaLuanaGomes from '../../assets/pictures/kelia_luana_gomes.jpeg';
+import MarianyAugustaFigueiredo from '../../assets/pictures/mariany_augusta_figueiredo.jpg';
+import MarleneAparecida from '../../assets/pictures/marlene_aparecida.jpg';
+import SaritaDuraes from '../../assets/pictures/sarita_duraes.jpeg';
+import SielyOliveiraAlmeida from '../../assets/pictures/siely_oliveira_almeida.jpg';
+import SolangePereiraMiranda from '../../assets/pictures/solange_pereira_miranda.jpg';
+import VitaDiasAlmeidaSantos from '../../assets/pictures/vita_dias_almeida_santos.jpg';
+import Default from '../../assets/pictures/default.png';
 
 function Card (props){
     return(
@@ -10,7 +25,11 @@ function Card (props){
             </section>
 
             <section className='identification'>
-                <img src="src\assets\images\woman-professional.jpg" alt="" />
+                {
+                    props.img == null 
+                    ? <img src={Default} alt="" />
+                    : <img src={props.img} alt="" />
+                }
                 <h1>{props.name}</h1>
                 <h2>{props.left}</h2>
             </section>
@@ -28,99 +47,123 @@ export default function About (props) {
     const arr = [
         {
             name: 'Alice Cristina Rocha dos Santos',
-            rightText: 'Educadora Social'
+            rightText: 'Educadora Social',
+            img: null
         },
         {
             name: 'Alcione Gonçalves Ferreira Alves',
-            rightText: 'Instrutora de Artes'
+            rightText: 'Instrutora de Artes',
+            img: AlcioneGolcalvesAlves,
         },
         {
             name: 'Claudiane A. M. Coelho da Cruz',
-            rightText: 'Professora'
+            rightText: 'Professora',
+            img: ClaudianeCoelhoCruz
         },
         {
             name: 'Géssica de Souza Nascimento',
-            rightText: 'Professora'
+            rightText: 'Professora',
+            img: GessicaSouzaNascimento
         },
         {
             name: 'Gizele Maria Magalhães Machado',
-            rightText: 'Diretora'
+            rightText: 'Diretora',
+            img: null
         },
         {
             name: 'Ilma Santa Rita dos Anjos Teixeira',
-            rightText: 'Professora'
+            rightText: 'Professora',
+            img: IlmaSantaRitaSantosTeixeira
         },
         {
             name: 'Izabela Braga',
-            rightText: 'Psicóloga'
+            rightText: 'Psicóloga',
+            img: IzabelaBraga
         },
         {
             name: 'João Aparecido de Andrade',
-            rightText: 'Professor'
+            rightText: 'Professor',
+            img: JoaoAparecidoAlmeida
         },
         {
             name: 'Juliana Marqueny Brandão',
-            rightText: 'Monitora Essencial'
+            rightText: 'Monitora Essencial',
+            img: JulianaMarquenyBrandao
         },
         {
             name: 'Kelia Luana Gomes',
-            rightText: 'Fisioterapeuta'
+            rightText: 'Fisioterapeuta',
+            img: KeliaLuanaGomes
         },
         {
             name: 'Leonilda de Oliveira Almeida',
-            rightText: 'ASEB'
+            rightText: 'ASEB',
+            img: null
         },
         {
             name: 'Lucineia Aparecida da Silva',
-            rightText: 'Secretária / Tesoureira'
+            rightText: 'Secretária / Tesoureira',
+            img: null
         },
         {
             name: 'Luiza Helena Silva',
-            rightText: 'ASEB'
+            rightText: 'ASEB',
+            img: null
         },
         {
             name: 'Maria Geralda da Rocha Brandão',
-            rightText: 'Educadora Social'
+            rightText: 'Educadora Social',
+            img: null
         },
         {
             name: 'Mariany Augusta Figueredo',
-            rightText: 'Professora'
+            rightText: 'Professora',
+            img: MarianyAugustaFigueiredo
         },
         {
             name: 'Marlene Aparecida Carvalho Mourão',
-            rightText: 'Professora'
+            rightText: 'Professora',
+            img: MarleneAparecida
         },
         {
             name: 'Marli Aparecida Procópio Alves',
-            rightText: 'Monitora'
+            rightText: 'Monitora',
+            img: null
         },
         {
             name: 'Matuzalém Medina Cardoso',
-            rightText: 'Motorista'
+            rightText: 'Motorista',
+            img: null
         },
         {
             name: 'Paulo Afonso Correia',
-            rightText: 'Aux. Serviço Geral'
+            rightText: 'Aux. Serviço Geral',
+            img: null
         },
         {
             name: 'Priscila Cristina Pinto',
-            rightText: 'Assistente Social'
+            rightText: 'Assistente Social',
+            img: null
         },
         {
             name: 'Sarita Martins M. Durães Pimenta',
-            rightText: 'Fonoaudióloga'
+            rightText: 'Fonoaudióloga',
+            img: SaritaDuraes
         },
         {
             name: 'Siely Oliveira Almeida',
-            rightText: 'Pedagoga'
+            rightText: 'Pedagoga',
+            img: SielyOliveiraAlmeida
         },
         {
             name: 'Solange Pereira Miranda',
-            rightText: 'Professora'
+            rightText: 'Professora',
+            img: SolangePereiraMiranda
         },
         {
             name: 'Vita Dias de Almeida Santos',
-            rightText: 'Professora'
+            rightText: 'Professora',
+            img: VitaDiasAlmeidaSantos
         }
     ];
 
@@ -143,7 +186,7 @@ export default function About (props) {
                 <h2>Conheça nossos profissionais</h2>
                 {
                     arr.map((e, idx) => 
-                        <Card key={idx} name={e.name} left={e.rightText}/>
+                        <Card key={idx} name={e.name} left={e.rightText} img={e.img}/>
                     )
                 }
             </div>
