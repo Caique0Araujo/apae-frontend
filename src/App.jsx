@@ -29,6 +29,9 @@ import EducacaoFundo from './assets/images/education/educacao-fundo.png';
 import EducacaoSecao from './assets/images/education/educacao-secao.jpg';
 import EducacaoSecao1 from './assets/images/education/educacao-secao1.jpg';
 
+import SocialFundo from './assets/images/social/assistencia-fundo.png';
+import SocialSecao from './assets/images/social/assistenacia-secao.jpg';
+
 const administrativoData = {
   title: 'Setor Administrativo da APAE SJE',
   image: FinanceiroFundo,
@@ -79,7 +82,7 @@ const educacaoData = {
 
 const assistenciaSocialData = {
   title: 'Setor de Assistencia Social da APAE SJE',
-  image: healthImage,
+  image: SocialFundo,
   sectionClass: 'health',
   invertSub: true,
   sub: [
@@ -87,7 +90,7 @@ const assistenciaSocialData = {
       key: 0,
       title: 'Sobre',
       subtitle: 'A atuação do Assistente Social na APAE de São João Evangelista/MG está voltada ao atendimento às pessoas com deficiência e/ou transtorno do espectro autista e suas famílias, com abordagem nas áreas da Assistência Social, Educação e Saúde; a fim de contribuir para o acesso aos programas, projetos e demais políticas públicas existentes na Rede Socioassistencial. A identificação das famílias com o setor do Serviço Social faz com que as mais diferentes demandas nos sejam trazidas, desta forma é de suma importância o acolhimento e a escuta qualificada. A partir disto são realizados os encaminhamentos necessários, tanto externos quanto para os demais profissionais da equipe multidisciplinar. O Assistente Social tem como objetivo no trabalho na APAE/SJE estreitar as relações família-instituição cada vez mais, entendendo que o usuário não é um ser dissociado da família ou comunidade. A ação do Serviço Social possibilita auxílio na promoção das famílias e usuários através de atendimentos socioeducativos e autodefensoria. É papel fundamental de o Assistente Social conscientizar as famílias e a sociedade que a pessoa com deficiência intelectual tem direitos e deveres como todo cidadão brasileiro.',
-      image: psychoImage
+      image: SocialSecao
     }
   ],
 };
