@@ -14,9 +14,14 @@ import Info from './pages/info/info';
 import About from './pages/about-us/about';
 import Workshop from './pages/workshop/workshop';
 
+import FinanceiroFundo from './assets/images/administrative/financeiro-fundo.png';
+import FinanceiroSecao from './assets/images/administrative/financeiro-secao.jpg';
+import FinanceiroSecao1 from './assets/images/administrative/financeiro-secao1.jpg';
+import FinanceiroSecao2 from './assets/images/administrative/financeiro-secao2.jpg';
+
 const administrativoData = {
   title: 'Setor Administrativo da APAE SJE',
-  image: healthImage,
+  image: FinanceiroFundo,
   sectionClass: 'health',
   invertSub: true,
   sub: [
@@ -24,19 +29,19 @@ const administrativoData = {
       key: 0,
       title: 'Como funciona',
       subtitle: 'O setor administrativo da APAE engloba a tesouraria e a secretaria escolar. A tesouraria cuida dos aspectos financeiros e contábeis da APAE. A Secretaria, por sua vez, cuida da administração da APAE como um todo, incluindo os setores de ensino, saúde e assistência social, e é responsável pela organização e ao bom funcionamento do fluxo de trabalho dos setores. De modo geral, a secretaria é responsável por todos os eventos burocráticos e legais de funcionamento da instituição.',
-      image: psychoImage
+      image: FinanceiroSecao
     },
     {
       key: 1,
       title: 'Secretaria',
       subtitle: 'A secretaria é responsável pela agenda de atendimento das clínicas, matrículas e tranferência dos alunos da APAE, o agendamento de avaliações, expedição de documentos, atendimento à comunidade, organização dos arquivos, protocolos e registros dos alunos, prestação de contas e recebimento das doações de bens diversos.',
-      image: physioImage
+      image: FinanceiroSecao1
     },
     {
       key: 2,
       title: 'Tesouraria',
       subtitle: 'O setor de tesouraria é responsável pela administração dos bens financeiros da APAE, do pagamento de contas e do recebimento das doações em dinheiro. Também é responsável por fazer o controle contábil de um modo geral.',
-      image: physioImage
+      image: FinanceiroSecao2
     }
   ],
 };
