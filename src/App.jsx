@@ -19,6 +19,12 @@ import FinanceiroSecao from './assets/images/administrative/financeiro-secao.jpg
 import FinanceiroSecao1 from './assets/images/administrative/financeiro-secao1.jpg';
 import FinanceiroSecao2 from './assets/images/administrative/financeiro-secao2.jpg';
 
+import CentroFundo from './assets/images/dia-center/centro-fundo.png';
+import CentroSecao from './assets/images/dia-center/centro-secao.jpg';
+import CentroSecao1 from './assets/images/dia-center/centro-secao1.jpg';
+import CentroSecao2 from './assets/images/dia-center/centro-secao2.jpg';
+import CentroSecao3 from './assets/images/dia-center/centro-secao3.jpg';
+
 const administrativoData = {
   title: 'Setor Administrativo da APAE SJE',
   image: FinanceiroFundo,
@@ -84,7 +90,7 @@ const assistenciaSocialData = {
 
 const centroDiaData = {
   title: 'Setor de Centro DIA da APAE SJE',
-  image: healthImage,
+  image: CentroFundo,
   sectionClass: 'health',
   invertSub: false,
   sub: [
@@ -92,25 +98,25 @@ const centroDiaData = {
       key: 0,
       title: 'O que é?',
       subtitle: 'É um espaço de convivência que tem atividades desenvolvidas em diversas ambiências e é direcionado a jovens e adultos com deficiência intelectual e múltipla que necessitam de apoios extensivos e generalizados. Sua finalidade é promover a autonomia, a inclusão social e a melhoria da qualidade de vida dos usuários, visando o reconhecimento do seu potencial, e aaceitação e valorização da diversidade. As ações do Centro Dia são diversificadas e abrangem atividades culturais e de lazer favorecendo a troca de experiências. Todas as intervenções realizadas pela APAE-SJE têm o propósito de manter e/ou desenvolver as habilidades dos usuários, fortalecendo seu protagonismo e reduzindo a exclusão social, o isolamento, a discriminação e o preconceito. A organização das atividades em ambiências, visam proporcionar vivências sociais, culturais e de lazer, além de desenvolver, através da arte e de situações reais, competências, habilidades e atitudes que promovam a autonomia e independência do usuário.',
-      image: psychoImage
+      image: CentroSecao
     },
     {
       key: 1,
       title: 'AMBIÊNCIA BEM VIVER',
       subtitle: 'A ambiência “Bem Viver” desenvolve atividades cognitivas e de iniciação em artes manuais, com o objetivo de estimular os participantes a interagir, observar, experimentar e explorar diversos materiais e técnicas, buscando sempre identificar e valorizar o conhecimento prévio, o desejo, a tolerância e o potencial criativo de cada pessoa.',
-      image: psychoImage
+      image: CentroSecao1
     },
     {
       key: 2,
       title: 'AMBIÊNCIA CORPO E MOVIMENTO',
       subtitle: 'A ambiência “Corpo e Movimento” visa proporcionar uma aprendizagem por meio de atividades corporais e físicas de baixo impacto, circuitos, jogos rítmicos e teatrais que exploram os movimentos corporais, o equilíbrio e o desenvolvimento do potencial cinestésico, criativo e artístico dos usuários.',
-      image: psychoImage
+      image: CentroSecao2
     },
     {
       key: 3,
       title: 'AMBIÊNCIA “VIVÊNCIAS”',
       subtitle: 'A ambiência “Vivências” compreende atividades da vida diária, da vida prática e de interação familiar e comunitária, enfatizando experiências e vivências relacionadas às questões do dia-a-dia, sociais favorecendo uma aprendizagem significativa de formação do cidadão. Familiares dos usuários e pessoas da comunidade podem participar desta Oficina, desde que seja agendado previamente.',
-      image: psychoImage
+      image: CentroSecao3
     }
   ],
 };
