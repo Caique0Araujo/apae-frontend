@@ -25,6 +25,10 @@ import CentroSecao1 from './assets/images/dia-center/centro-secao1.jpg';
 import CentroSecao2 from './assets/images/dia-center/centro-secao2.jpg';
 import CentroSecao3 from './assets/images/dia-center/centro-secao3.jpg';
 
+import EducacaoFundo from './assets/images/education/educacao-fundo.png';
+import EducacaoSecao from './assets/images/education/educacao-secao.jpg';
+import EducacaoSecao1 from './assets/images/education/educacao-secao1.jpg';
+
 const administrativoData = {
   title: 'Setor Administrativo da APAE SJE',
   image: FinanceiroFundo,
@@ -54,7 +58,7 @@ const administrativoData = {
 
 const educacaoData = {
   title: 'Setor de Educação da APAE SJE',
-  image: healthImage,
+  image: EducacaoFundo,
   sectionClass: 'health',
   invertSub: false,
   sub: [
@@ -62,13 +66,13 @@ const educacaoData = {
       key: 0,
       title: 'FASE I - ENSINO FUNDAMENTAL',
       subtitle: 'Atende educandos com deficiência intelectual e múltipla que necessitam de apoio pervasivo, oferece programas educacionais especializado com currículo adaptado, educação física adaptada, visando o desenvolvimento global dos alunos e suas potencialidades nos aspectos: intelectual, sócio-afetivo, físico, motor, promovendo ações da família e da comunidade e inclusão social. O sistema de trabalho envolve Currículo Funcional e Natural, integração sensorial, comunicação alternativa, projetos, atividades para o desenvolvimento de habilidades sociais, adaptativas e atividades de vida diária e prática com apoio terapêutico de equipe multidisciplinar, atuando como agente facilitador no processo ensino-aprendizagem.',
-      image: psychoImage
+      image: EducacaoSecao
     },
     {
       key: 1,
       title: 'FASE II - SÓCIO-EDUCACIONAL',
       subtitle: 'O atendimento socioeducacionais é ofertado aos alunos que apresentam necessidades especificas dado ao grau de comprometimento físico e intelectual, onde as atividades realizadas proporciona o desenvolvimento das habilidades de vida prática e diária, utilizando o Currículo Funcional Natural realizando adaptações curriculares adequadas promovendo sua independência e autonomia. A Apae oferta educação infantil, Ensino Fundamental, Anos Iniciais de 1º ao 5º ano, Educação de Jovens Adultos - Anos Iniciais e Finais. Nossa equipe da educação é composta por profissionais capacitados e especializados em educação inclusiva e especial com experiência na área. O trabalho educacional desenvolvido pela Apae é dinâmico, criativo, com apostilas pedagógicas individualizadas, visando um ensino de qualidade aos nossos alunos com deficiência intelectual e múltiplas.',
-      image: physioImage
+      image: EducacaoSecao1
     }
   ],
 };
