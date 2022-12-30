@@ -9,7 +9,7 @@ const Section = (props) => {
   return (
     <div className='main-box'>
       <Container className='main-container-section' fluid>
-        <Row className={`${data.sectionClass}-section-info-container`} >
+        <Row className={`${data.sectionClass}-section-info-container`} id={'section-info-container'} >
           <Col className='left-column'>
             <h1 className='info-text'>{data.title}</h1>
           </Col>
