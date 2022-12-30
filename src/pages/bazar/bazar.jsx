@@ -130,36 +130,36 @@ function Bazar() {
             <Container fluid className='section-page' id="doar">
                 <Row className="row-card">
                     <Col>
-                        <h4 className="title-card">Como funciona</h4>
-                        <p className="description-card">No Bazar funciona também a fábrica de vassouras de garrafas pet.</p>
+                        <h4 className="title-card">Como funciona o bazar da APAE ?</h4>
+                        <p className="description-card">O Bazar da APAE oferece para a comunidade produtos doados pela própria comnidade. No Bazar também são vendidos itens criados na própria instituição como as vassouras artesanais de garrafas pet.</p>
                     </Col>
 
                     <Col>
-                        <h4 className="title-card right">Tipos de produtos doados ?</h4>
+                        <h4 className="title-card right">Quais produtos são recebidos pela comunidade ?</h4>
                         <p className="description-card right">O BAZAR DA APAE recebe todos os tipos de doações. Como peças básicas do vestuário, bolsas, sapatos, roupas de cama, mesa e banho, utensílios domésticos, ferramentas, materiais escolares, brinquedos, móveis, etc. <br/>Recebemos também a doação de garrafas Pet, que são utilizadas para a confecção de vassouras.</p>
                     </Col>
                 </Row>
 
                 <Row className="row-card">
                     <Col>
-                        <h4 className="title-card">Localização</h4>
-                        <p className="description-card">Localização: Rua Benedito Valadares nº 240, em frente a Padaria Pão Gostoso.</p>
+                        <h4 className="title-card">Localização do bazar:</h4>
+                        <p className="description-card">Rua Benedito Valadares nº 240, em frente a Padaria Pão Gostoso.</p>
                     </Col>
 
                     <Col>
-                        <h4 className="title-card right">Horário de funcionamento</h4>
-                        <p className="description-card right">Horário de funcionamento: 10h às 17h, segunda a sexta-feira.</p>
+                        <h4 className="title-card right">Horário de funcionamento:</h4>
+                        <p className="description-card right">O bazar fica aberto de 10h às 17h, segunda a sexta-feira.</p>
                     </Col>
                 </Row>
 
                 <Row className="row-card">
                     <Col>
-                        <h4 className="title-card">Como comprar</h4>
-                        <p className="description-card">Vendas somente em dinheiro na loja física.</p>
+                        <h4 className="title-card">Como comprar os produtos do bazar ?</h4>
+                        <p className="description-card">Vendas somente em dinheiro na loja física do bazar.</p>
                     </Col>
 
                     <Col>
-                        <h4 className="title-card right">Como doar</h4>
+                        <h4 className="title-card right">Como doar produtos para o bazar:</h4>
                         <p className="description-card right">Levando diretamente ao Bazar, na sede da APAE, ou ligando para a APAE no número 33 3412 1195 que buscamos sua doação.</p>
                     </Col>
                 </Row>
