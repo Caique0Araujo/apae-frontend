@@ -139,12 +139,23 @@
 @media screen and (max-width: 900px) 
     .main-content
         min-width: 60%
+
+    .info-content
+        height: fit-content
+        flex-direction: column
+        article
+            width: 94%
+            height: fit-content
+            margin-top: 20px
+            section
+                margin-bottom: 10px
+        
 @media screen and (orientation : portrait) 
 
     .main-header 
         display: flex
         flex-direction: row
-        height: 700px
+        height: 800px
         width: 100%
         background-image: url('../../../assets/images/info_banner_background.png')
         background-color: white
