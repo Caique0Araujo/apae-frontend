@@ -9,7 +9,7 @@ export default function Intro(){
         <nav className='main-box-intro'>
             <div>
                 <h1 className='title'>Conheça melhor a APAE</h1>
-                <h2 className='subtitle'>As Apaes - Associações de Pais e Amigos dos Excepcionais nasceu em 1954, no Rio de Janeiro. É organização social, sem fins lucrativos, que têm por objetivo principal promover a atenção integral à pessoa com deficiência, prioritariamente aquela com deficiência intelectual e múltipla.
+                <h2 className='subtitle'>A APAE de São João Evangelista é uma associação criada sem fins lucrativos, mantida pela comunidade e entidades através de doações, rendas de promoções, contribuições de pais e sócios e outros. É filiada à Federação Nacional das APAEs e Federação das APAEs do Estado de Minas Gerais.
                 </h2>
                 <Link to={'saiba-mais'}><ButtonComponent text='Saiba mais'/></Link>
                 
