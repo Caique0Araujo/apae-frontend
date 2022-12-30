@@ -18,8 +18,22 @@ export default function Info() {
                 </div>
             </div>
             <div className='info-content'>
-                secao para colocar infos 
-                
+               
+                <article className='card-box'>
+                    <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam ipsam laudantium impedit voluptas, reiciendis aliquid. Ex voluptatum beatae possimus</p></section>
+                    <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam ipsam laudantium impedit voluptas, reiciendis aliquid. Ex voluptatum beatae possimus</p></section>
+                    <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam ipsam laudantium impedit voluptas, reiciendis aliquid. Ex voluptatum beatae possimus</p></section>
+                </article>
+
+                <article className='card-box'>
+                    <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam ipsam laudantium impedit voluptas, reiciendis aliquid. Ex voluptatum beatae possimus</p></section>
+                    <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam ipsam laudantium impedit voluptas, reiciendis aliquid. Ex voluptatum beatae possimus</p></section>
+                </article>
+            
+                <article className='card-box'>
+                    <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam ipsam laudantium impedit voluptas, reiciendis aliquid. Ex voluptatum beatae possimus</p></section>
+                </article>
+               
             </div>
 
             <div className='donation-content'>
