@@ -61,7 +61,7 @@ const Workshop = (props) => {
         <Col className="info-col">
           <div className="card">
             <div className="card-interior">
-              <p className="card-text">Aqui vai um pequeno parágrafo sobre as oficinas no geral, como seu propósito ou coisa do tipo por exemplo.</p>
+              <p className="card-text">A APAE SJE realiza oficinas, que são eventos onde é estimulada a prática de atividades juntamente com a comunidade. Abaixo alguns exemplos de oficinas que realizamos na institução.</p>
               <img src={imageSettings} className='image-settings' />
             </div>
           </div>
