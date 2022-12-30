@@ -36,10 +36,9 @@ import SaudeFisio from './assets/images/health/heath-section-physio.png';
 import SaudePsico from './assets/images/health/heath-section-psico.jpg';
 
 const administrativoData = {
-  title: 'Setor Administrativo da APAE SJE',
+  title: 'Administrativo',
   image: FinanceiroFundo,
-  sectionClass: 'health',
-  invertSub: true,
+  sectionClass: 'adm',
   sub: [
     {
       key: 0,
@@ -63,10 +62,9 @@ const administrativoData = {
 };
 
 const educacaoData = {
-  title: 'Setor de Educação da APAE SJE',
+  title: 'Educação',
   image: EducacaoFundo,
-  sectionClass: 'health',
-  invertSub: false,
+  sectionClass: 'education',
   sub: [
     {
       key: 0,
@@ -84,10 +82,9 @@ const educacaoData = {
 };
 
 const assistenciaSocialData = {
-  title: 'Setor de Assistencia Social da APAE SJE',
+  title: 'Assistência Social',
   image: SocialFundo,
-  sectionClass: 'health',
-  invertSub: true,
+  sectionClass: 'social',
   sub: [
     {
       key: 0,
@@ -99,10 +96,9 @@ const assistenciaSocialData = {
 };
 
 const centroDiaData = {
-  title: 'Setor de Centro DIA da APAE SJE',
+  title: 'Centro DIA',
   image: CentroFundo,
-  sectionClass: 'health',
-  invertSub: false,
+  sectionClass: 'dia',
   sub: [
     {
       key: 0,
@@ -132,10 +128,9 @@ const centroDiaData = {
 };
 
 const saudeData = {
-  title: 'Setor de Saúde da APAE SJE',
+  title: 'Saúde',
   image: healthImage,
   sectionClass: 'health',
-  invertSub: true,
   sub: [
     {
       key: 0,

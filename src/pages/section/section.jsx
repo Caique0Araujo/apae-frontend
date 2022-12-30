@@ -5,7 +5,6 @@ import SubSection from './components/subsection';
 
 const Section = (props) => {
   const data = props.data;
-  console.log(`${data.sectionClass}-section-info-container`)
   return (
     <div className='main-box'>
       <Container className='main-container-section' fluid>
@@ -14,7 +13,7 @@ const Section = (props) => {
             <h1 className='info-text'>{data.title}</h1>
           </Col>
           <Col className='info-image'>
-            <Image src={data.image} className='section-image' />           
+            <Image src={data.image} className='subSection-image' />           
           </Col>
         </Row>
         {data.sub.map((section) => {

@@ -22,9 +22,8 @@ const SubSection = (props) => {
     <div className='main-subsection-box'>
       <Row className='sub-section-container' >
         <Col style={{
-          padding: 0,
-          margin: 0,
-          display: 'flex',
+          padding: '0%',
+          margin: '0%',
           justifyContent: imageAlign,
         }} xs={{order}}>
           <img src={section.image} className='subSection-image' />
@@ -32,20 +31,15 @@ const SubSection = (props) => {
         <Col className='top-column'>
           <Row className='top-row'>
             <Row className='title-row'>
-              <h1 style={{ fontSize: 48, fontWeight: '500', textAlign: textAlign  }}>
+              <h1 style={{ fontSize: '3.5em', fontWeight: '500', textAlign: 'center'   }}>
                 {section.title}
               </h1>
             </Row>
             <Row className='sub-title-row'>
-              <h5 style={{ fontSize: 24, fontWeight: '400', textAlign: textAlign  }}>
+              <h5 style={{ fontSize: '1.2em', fontWeight: '400', textAlign: 'justify'  }}>
                 {section.subtitle}
               </h5>
             </Row>
-          </Row>
-          <Row className='text-row' md={8}>
-            <p style={{ fontSize: 12, fontWeight: '300', textAlign: textAlign  }}>
-              {section.text}
-            </p>
           </Row>
         </Col>   
       </Row>
