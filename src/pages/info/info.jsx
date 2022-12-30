@@ -17,6 +17,10 @@ export default function Info() {
                     </p>
                 </div>
             </div>
+            <div className='info-content'>
+                secao para colocar infos 
+                
+            </div>
 
             <div className='donation-content'>
                 <div className='donation-info'>
