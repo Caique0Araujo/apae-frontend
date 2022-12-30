@@ -12,27 +12,29 @@ export default function Info() {
             <div className='main-header'>
                 <div className='main-content'>
                     <h2>APAE São João Evangelista</h2>
-                    <p>É ofertado dentro da APAE atendimento múltiplo – Escola e entidade assistencial, onde os alunos aprendem não só a educação formal, mas também a socialização e a independência.<br/>
-                    A APAE também oferece atendimentos complementares como fisioterapia, psicologia, terapia ocupacional, fonoaudiologia e artes. 
+                    <p>A unidade foi fundada em 25 de maio de 1994, por iniciativa de um grupo de pessoas da comunidade. As atividades de atendimento das pessoas com deficiência intelectual e múltipla foram iniciadas no dia 13 de setembro de 1994 em uma casa alugada pelos pais dos alunos, localizada na Rua Marechal Floriano n º 146.
                     </p>
                 </div>
             </div>
+            <h1 className='title' id='title-info'>
+                Mais sobre a APAE
+            </h1>
             <div className='info-content'>
                
-                <article className='card-box'>
-                    <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam ipsam laudantium impedit voluptas, reiciendis aliquid. Ex voluptatum beatae possimus</p></section>
-                    <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam ipsam laudantium impedit voluptas, reiciendis aliquid. Ex voluptatum beatae possimus</p></section>
-                    <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam ipsam laudantium impedit voluptas, reiciendis aliquid. Ex voluptatum beatae possimus</p></section>
-                </article>
-
-                <article className='card-box'>
-                    <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam ipsam laudantium impedit voluptas, reiciendis aliquid. Ex voluptatum beatae possimus</p></section>
-                    <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam ipsam laudantium impedit voluptas, reiciendis aliquid. Ex voluptatum beatae possimus</p></section>
-                </article>
-            
-                <article className='card-box'>
-                    <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam ipsam laudantium impedit voluptas, reiciendis aliquid. Ex voluptatum beatae possimus</p></section>
-                </article>
+                    <article className='card-box'>
+                        <h1>Trajetória</h1>
+                        <section><p>Foram atendidos inicialmente dezesseis alunos, distribuídos em três classes e, em fevereiro de 1996, passou a funcionar à Praça Coronel Antônio Pedro, n.º 172, em prédio cedido pela Prefeitura Municipal, distribuídos em dois turnos matutino e vespertino.</p></section>
+                        <section><p>Atualmente, funciona em sede própria na Rua Duval Pimenta n.º 100. Ela oferta atendimento múltiplo – Escola e entidade assistencial, onde os alunos aprendem não só a educação formal, mas também a socialização e a independência. </p></section>
+                    </article>
+                    <article className='card-box'>
+                        <h1>Missão e visão</h1>
+                        <section><p>Missão: Promover e articular ações de defesa de direito, prevenção, orientação, prestação de serviços, apoio à família, direcionadas à melhoria da qualidade de vida da pessoa com deficiência e a construção de uma sociedade justa e solidaria </p></section>
+                        <section><p>Nossa visão é: “Ser um movimento de pais, amigos e pessoas com deficiência, de excelência e referência no país na defesa de direitos e prestação de serviços.” Prestar serviços assistenciais às pessoas com deficiência promovendo a defesa de seus direitos, o apoio aos familiares e oferecer atendimento especializado nas áreas de educação, saúde, assistência social, trabalho, artes, esporte e lazer.</p></section>
+                    </article>
+                    <article className='card-box'>
+                        <h1>Valores</h1>
+                        <section><p>• Ética e transparência nas relações. <br/> • Respeito à diversidade humana. <br/> • Qualidade e inovação. <br/> • Comprometimento com a causa. <br/> • Atitude colaborativa. <br/> • Valorização das pessoas.</p> </section>
+                    </article>
                
             </div>
 
