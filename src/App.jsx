@@ -5,7 +5,6 @@ import './app.css';
 import Section from './pages/section/section';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import News from './pages/news/news';
-import healthImage from './assets//images/health-section.png';
 import MenuBarComponent from './pages/components/menu-bar-component/menu-bar-component';
 import FooterBaseComponent from './pages/components/footer-base-component/footer-base-component';
 import Info from './pages/info/info';
@@ -30,6 +29,7 @@ import EducacaoSecao1 from './assets/images/education/educacao-secao1.jpg';
 import SocialFundo from './assets/images/social/assistencia-fundo.png';
 import SocialSecao from './assets/images/social/assistenacia-secao.jpg';
 
+import healthImage from './assets//images/health/health-section.png';
 import SaudeAbout from './assets/images/health/heath-section-about.jpg';
 import SaudePhono from './assets/images/health/heath-section-phono.jpg';
 import SaudeFisio from './assets/images/health/heath-section-physio.png';
