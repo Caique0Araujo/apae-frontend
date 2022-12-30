@@ -1,9 +1,5 @@
 import { Col, Row} from 'react-bootstrap';
 import '../css/workshop-card.min.css';
-import img1 from '../../../assets/images/workshop-img1.png'
-import img2 from '../../../assets/images/workshop-img2.png'
-import img3 from '../../../assets/images/workshop-img3.png'
-
 
 const WorkshopCard = (props) => {
 

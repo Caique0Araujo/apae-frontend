@@ -8,8 +8,6 @@ import News from './pages/news/news';
 import healthImage from './assets//images/health-section.png';
 import MenuBarComponent from './pages/components/menu-bar-component/menu-bar-component';
 import FooterBaseComponent from './pages/components/footer-base-component/footer-base-component';
-import psychoImage from './assets/images/health-section-psycho.png';
-import physioImage from './assets/images/health-section-physio.png';
 import Info from './pages/info/info';
 import About from './pages/about-us/about';
 import Workshop from './pages/workshop/workshop';
@@ -31,6 +29,11 @@ import EducacaoSecao1 from './assets/images/education/educacao-secao1.jpg';
 
 import SocialFundo from './assets/images/social/assistencia-fundo.png';
 import SocialSecao from './assets/images/social/assistenacia-secao.jpg';
+
+import SaudeAbout from './assets/images/health/heath-section-about.jpg';
+import SaudePhono from './assets/images/health/heath-section-phono.jpg';
+import SaudeFisio from './assets/images/health/heath-section-physio.png';
+import SaudePsico from './assets/images/health/heath-section-psico.jpg';
 
 const administrativoData = {
   title: 'Setor Administrativo da APAE SJE',
@@ -138,25 +141,25 @@ const saudeData = {
       key: 0,
       title: 'Sobre',
       subtitle: 'A área da saúde da APAE São João Evangelista integra a rede de atenção especializada da pessoa com deficiência e atua na habilitação e reabilitação intelectual e física. O objetivo é melhorar a qualidade de vida e promover a independência dos pacientes atendidos. Na Apae de São João, uma equipe multiprofissional executa os atendimentos de reabilitação utilizando de várias disciplinas, sempre considerando a individualidade e o reflexo da deficiência no indivíduo. Neste processo, está prevista a participação da família, tendo em vista a importância dela a no cuidado da pessoa com deficiência. Os serviços prestados na área de Saúde são:',
-      image: psychoImage
+      image: SaudeAbout
     },
     {
       key: 1,
       title: 'Fisioterapia',
       subtitle: 'O atendimento fisioterapêutico na APAE tem por objetivo a prevenção, reabilitação motora a integridade de órgãos, sistema ou função, através de recursos específicos estimula as potencialidades possibilitando uma melhor qualidade de vida das pessoas com deficiência que tem indicação deste atendimento. Orienta as famílias conforme necessidade na continuidade dos exercícios, posicionamentos adequados e alongamento, A fisioterapeuta também indica cadeiras adaptadas, órteses e outros. Visando complementar os atendimentos de fisioterapia.',
-      image: physioImage
+      image: SaudeFisio
     },
     {
       key: 2,
       title: 'Fonoaudiologia',
       subtitle: 'O trabalho de fonoaudiologia atua na assistência a pacientes com comprometimentos neurológicos, e cognitivos, desenvolve a prevenção, diagnóstico e terapia fonoaudiológica, estimulação da aquisição do desenvolvimento da fala e linguagem (oral/escrita), adequação de tônus, mobilidade e motricidade dos órgãos fonoarticulatórios, comunicação alternativa. Oferece orientação familiar proporcionando uma melhor qualidade de vida e bem estar físico e emocional.',
-      image: physioImage
+      image: SaudePhono
     },
     {
       key: 3,
       title: 'Psicologia',
       subtitle: 'Tem como objetivo auxiliar na formação da personalidade, construção do conhecimento, na elaboração do pensamento proporcionando o desenvolvimento global da pessoa com deficiência intelectual e múltipla.  Também, trabalha no apoio e orientação das famílias para estabelecimento de metas de aquisição e melhora das habilidades sociais, afetivas e comportamentais mais adequados à realidade de cada contexto sócio familiar, com o objetivo de desenvolver a pessoa com deficiência e proporcionar a inclusão social.',
-      image: physioImage
+      image: SaudePsico
     }
   ],
 };

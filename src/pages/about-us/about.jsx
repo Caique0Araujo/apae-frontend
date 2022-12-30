@@ -14,6 +14,7 @@ import SielyOliveiraAlmeida from '../../assets/pictures/siely_oliveira_almeida.j
 import SolangePereiraMiranda from '../../assets/pictures/solange_pereira_miranda.jpg';
 import VitaDiasAlmeidaSantos from '../../assets/pictures/vita_dias_almeida_santos.jpg';
 import Default from '../../assets/pictures/default.png';
+import DefaultFemale from '../../assets/pictures/default_female.png';
 
 function Card (props){
     return(
@@ -48,7 +49,7 @@ export default function About (props) {
         {
             name: 'Alice Cristina Rocha dos Santos',
             rightText: 'Educadora Social',
-            img: null
+            img: DefaultFemale
         },
         {
             name: 'Alcione Gonçalves Ferreira Alves',
@@ -68,7 +69,7 @@ export default function About (props) {
         {
             name: 'Gizele Maria Magalhães Machado',
             rightText: 'Diretora',
-            img: null
+            img: DefaultFemale
         },
         {
             name: 'Ilma Santa Rita dos Anjos Teixeira',
@@ -98,22 +99,22 @@ export default function About (props) {
         {
             name: 'Leonilda de Oliveira Almeida',
             rightText: 'ASEB',
-            img: null
+            img: DefaultFemale
         },
         {
             name: 'Lucineia Aparecida da Silva',
             rightText: 'Secretária / Tesoureira',
-            img: null
+            img: DefaultFemale
         },
         {
             name: 'Luiza Helena Silva',
             rightText: 'ASEB',
-            img: null
+            img: DefaultFemale
         },
         {
             name: 'Maria Geralda da Rocha Brandão',
             rightText: 'Educadora Social',
-            img: null
+            img: DefaultFemale
         },
         {
             name: 'Mariany Augusta Figueredo',
@@ -128,22 +129,22 @@ export default function About (props) {
         {
             name: 'Marli Aparecida Procópio Alves',
             rightText: 'Monitora',
-            img: null
+            img: DefaultFemale
         },
         {
             name: 'Matuzalém Medina Cardoso',
             rightText: 'Motorista',
-            img: null
+            img: Default
         },
         {
             name: 'Paulo Afonso Correia',
             rightText: 'Aux. Serviço Geral',
-            img: null
+            img: Default
         },
         {
             name: 'Priscila Cristina Pinto',
             rightText: 'Assistente Social',
-            img: null
+            img: DefaultFemale
         },
         {
             name: 'Sarita Martins M. Durães Pimenta',
