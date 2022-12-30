@@ -136,14 +136,26 @@ const saudeData = {
   sub: [
     {
       key: 0,
-      title: 'FASE I - ENSINO FUNDAMENTAL',
-      subtitle: 'Atende educandos com deficiência intelectual e múltipla que necessitam de apoio pervasivo, oferece programas educacionais especializado com currículo adaptado, educação física adaptada, visando o desenvolvimento global dos alunos e suas potencialidades nos aspectos: intelectual, sócio-afetivo, físico, motor, promovendo ações da família e da comunidade e inclusão social. O sistema de trabalho envolve Currículo Funcional e Natural, integração sensorial, comunicação alternativa, projetos, atividades para o desenvolvimento de habilidades sociais, adaptativas e atividades de vida diária e prática com apoio terapêutico de equipe multidisciplinar, atuando como agente facilitador no processo ensino-aprendizagem.',
+      title: 'Sobre',
+      subtitle: 'A área da saúde da APAE São João Evangelista integra a rede de atenção especializada da pessoa com deficiência e atua na habilitação e reabilitação intelectual e física. O objetivo é melhorar a qualidade de vida e promover a independência dos pacientes atendidos. Na Apae de São João, uma equipe multiprofissional executa os atendimentos de reabilitação utilizando de várias disciplinas, sempre considerando a individualidade e o reflexo da deficiência no indivíduo. Neste processo, está prevista a participação da família, tendo em vista a importância dela a no cuidado da pessoa com deficiência. Os serviços prestados na área de Saúde são:',
       image: psychoImage
     },
     {
       key: 1,
-      title: 'FASE II - SÓCIO-EDUCACIONAL',
-      subtitle: 'O atendimento socioeducacionais é ofertado aos alunos que apresentam necessidades especificas dado ao grau de comprometimento físico e intelectual, onde as atividades realizadas proporciona o desenvolvimento das habilidades de vida prática e diária, utilizando o Currículo Funcional Natural realizando adaptações curriculares adequadas promovendo sua independência e autonomia. A Apae oferta educação infantil, Ensino Fundamental, Anos Iniciais de 1º ao 5º ano, Educação de Jovens Adultos - Anos Iniciais e Finais. Nossa equipe da educação é composta por profissionais capacitados e especializados em educação inclusiva e especial com experiência na área. O trabalho educacional desenvolvido pela Apae é dinâmico, criativo, com apostilas pedagógicas individualizadas, visando um ensino de qualidade aos nossos alunos com deficiência intelectual e múltiplas.',
+      title: 'Fisioterapia',
+      subtitle: 'O atendimento fisioterapêutico na APAE tem por objetivo a prevenção, reabilitação motora a integridade de órgãos, sistema ou função, através de recursos específicos estimula as potencialidades possibilitando uma melhor qualidade de vida das pessoas com deficiência que tem indicação deste atendimento. Orienta as famílias conforme necessidade na continuidade dos exercícios, posicionamentos adequados e alongamento, A fisioterapeuta também indica cadeiras adaptadas, órteses e outros. Visando complementar os atendimentos de fisioterapia.',
+      image: physioImage
+    },
+    {
+      key: 2,
+      title: 'Fonoaudiologia',
+      subtitle: 'O trabalho de fonoaudiologia atua na assistência a pacientes com comprometimentos neurológicos, e cognitivos, desenvolve a prevenção, diagnóstico e terapia fonoaudiológica, estimulação da aquisição do desenvolvimento da fala e linguagem (oral/escrita), adequação de tônus, mobilidade e motricidade dos órgãos fonoarticulatórios, comunicação alternativa. Oferece orientação familiar proporcionando uma melhor qualidade de vida e bem estar físico e emocional.',
+      image: physioImage
+    },
+    {
+      key: 3,
+      title: 'Psicologia',
+      subtitle: 'Tem como objetivo auxiliar na formação da personalidade, construção do conhecimento, na elaboração do pensamento proporcionando o desenvolvimento global da pessoa com deficiência intelectual e múltipla.  Também, trabalha no apoio e orientação das famílias para estabelecimento de metas de aquisição e melhora das habilidades sociais, afetivas e comportamentais mais adequados à realidade de cada contexto sócio familiar, com o objetivo de desenvolver a pessoa com deficiência e proporcionar a inclusão social.',
       image: physioImage
     }
   ],
