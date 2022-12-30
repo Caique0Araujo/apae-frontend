@@ -4,24 +4,38 @@ import ButtonComponent from "../components/button-component/button-component";
 import image from '../../assets/images/workshop-img-girl.png';
 import imageSettings from '../../assets/images/settings-img.png';
 import WorkshopCard from "./components/workshop-card";
-import { Link } from 'react-router-dom';
+
+import Culinaria1 from '../../assets/images/oficinas/culinaria1.jpg';
+import Culinaria2 from '../../assets/images/oficinas/culinaria2.jpg';
+import Culinaria3 from '../../assets/images/oficinas/culinaria3.jpg';
+
+import Artesanato1 from '../../assets/images/oficinas/artesanato1.jpg';
+import Artesanato2 from '../../assets/images/oficinas/artesanato2.jpg';
+import Artesanato3 from '../../assets/images/oficinas/artesanato3.jpg';
+
+import Tera1 from '../../assets/images/oficinas/tera1.jpg';
+import Tera2 from '../../assets/images/oficinas/tera2.jpg';
+import Tera3 from '../../assets/images/oficinas/tera3.jpg';
 
 const workshop1 = {
   title: 'Oficina de culinária',
   subtitle: 'Algo sobre este tipo de oficina para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-  text: 'Um parágrafo maior aqui a respeito da oficina em questão. Não coloquei as outras oficinas porque serão iguais as seções delas accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut  eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut '
+  text: 'Um parágrafo maior aqui a respeito da oficina em questão. Não coloquei as outras oficinas porque serão iguais as seções delas accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut  eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
+  imgs: [Culinaria1, Culinaria2, Culinaria3]
 }
 
 const workshop2 = {
   title: 'Oficina de artesanato',
   subtitle: 'Algo sobre este tipo de oficina para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-  text: 'Um parágrafo maior aqui a respeito da oficina em questão. Não coloquei as outras oficinas porque serão iguais as seções delas accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut  eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut '
+  text: 'Um parágrafo maior aqui a respeito da oficina em questão. Não coloquei as outras oficinas porque serão iguais as seções delas accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut  eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
+  imgs: [Artesanato1, Artesanato2, Artesanato3]
 }
 
 const workshop3 = {
   title: 'Oficina terapeutica',
   subtitle: 'Algo sobre este tipo de oficina para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-  text: 'Um parágrafo maior aqui a respeito da oficina em questão. Não coloquei as outras oficinas porque serão iguais as seções delas accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut  eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut '
+  text: 'Um parágrafo maior aqui a respeito da oficina em questão. Não coloquei as outras oficinas porque serão iguais as seções delas accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut  eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
+  imgs: [Culinaria1, Culinaria2, Culinaria3]
 }
 
 

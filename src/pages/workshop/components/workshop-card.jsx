@@ -8,6 +8,7 @@ import img3 from '../../../assets/images/workshop-img3.png'
 const WorkshopCard = (props) => {
 
   const workshop = props.workshop;
+  const imgs = workshop.imgs;
 
   return (
     <div className="main">
@@ -22,11 +23,11 @@ const WorkshopCard = (props) => {
       </Col>
       <Col className='img-col'>
         <Col className='column-one'>
-          <img src={img2} className='image-one' />
-          <img src={img3} className='image-two' />
+          <img src={imgs[1]} className='image-one rounded-pill' />
+          <img src={imgs[2]} className='image-two rounded-pill' />
         </Col>
         <Col className='column-two'>
-          <img src={img1} className='image-three' />
+          <img src={imgs[0]} className='image-three rounded-pill' />
         </Col>
       </Col>
     </div>
