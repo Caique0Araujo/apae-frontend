@@ -34,6 +34,7 @@ import SaudeAbout from './assets/images/health/heath-section-about.jpg';
 import SaudePhono from './assets/images/health/heath-section-phono.jpg';
 import SaudeFisio from './assets/images/health/heath-section-physio.png';
 import SaudePsico from './assets/images/health/heath-section-psico.jpg';
+import ScrollTop from './pages/components/scroll-top-component/scrollTop';
 
 const administrativoData = {
   title: 'Administrativo',
@@ -164,6 +165,7 @@ function App() {
     <>
     <BrowserRouter>
     <MenuBarComponent/>
+      <ScrollTop />
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/noticia/:id' element={<News/>}/>

@@ -11,7 +11,6 @@ const WorkshopCard = (props) => {
       <Col className='text-col'>
         <Row className='titles-row'>
           <h1>{workshop.title}</h1>
-          <h4>{workshop.subtitle}</h4>
         </Row>
         <Row className='description-row'>
           <p>{workshop.text}</p>

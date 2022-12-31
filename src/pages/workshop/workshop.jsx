@@ -13,30 +13,23 @@ import Artesanato1 from '../../assets/images/oficinas/artesanato1.jpg';
 import Artesanato2 from '../../assets/images/oficinas/artesanato2.jpg';
 import Artesanato3 from '../../assets/images/oficinas/artesanato3.jpg';
 
-import Tera1 from '../../assets/images/oficinas/tera1.jpg';
-import Tera2 from '../../assets/images/oficinas/tera2.jpg';
-import Tera3 from '../../assets/images/oficinas/tera3.jpg';
+
 
 const workshop1 = {
-  title: 'Oficina de culinária',
-  subtitle: 'Algo sobre este tipo de oficina para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-  text: 'Um parágrafo maior aqui a respeito da oficina em questão. Não coloquei as outras oficinas porque serão iguais as seções delas accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut  eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
-  imgs: [Culinaria1, Culinaria2, Culinaria3]
+  title: 'Oficina de musicalização e comunicação',
+  subtitle: '',
+  text: 'Realizada na sala de música, esta oficina utiliza a expressão e os sons musicais na aprendizagem, além de explorar as possibilidades de desenvolvimento da linguagem, da expressão, da comunicação e do potencial criativo',
+  imgs: [Artesanato1, Artesanato2, Artesanato3]
 }
 
 const workshop2 = {
   title: 'Oficina de artesanato',
-  subtitle: 'Algo sobre este tipo de oficina para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-  text: 'Um parágrafo maior aqui a respeito da oficina em questão. Não coloquei as outras oficinas porque serão iguais as seções delas accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut  eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
+  subtitle: '',
+  text: 'As oficinas de artesanato estimulam a criativadade através da confecção de objetos utilizando materias diferentes. Os produtos gerados por essas oficinas vão desde itens decorativos até roupas e vassouras',
   imgs: [Artesanato1, Artesanato2, Artesanato3]
 }
 
-const workshop3 = {
-  title: 'Oficina terapeutica',
-  subtitle: 'Algo sobre este tipo de oficina para servir como subtítulo. (essas imagens são apenas ilustrativas, podendo ser trocadas)',
-  text: 'Um parágrafo maior aqui a respeito da oficina em questão. Não coloquei as outras oficinas porque serão iguais as seções delas accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut  eu, porttitor cursus ligula. Fusce at lacus sit amet nisi aliquam finibus. Nunc luctus dignissim bibendum. Sed in est lacus. Integer ex erat, accumsan eu ipsum nec, maximus rhoncus magna. Fusce cursus neque ullamcorper elit volutpat, id malesuada nulla dignissim. In ut ',
-  imgs: [Culinaria1, Culinaria2, Culinaria3]
-}
+
 
 
 const Workshop = (props) => {
@@ -71,7 +64,6 @@ const Workshop = (props) => {
     <Container id="pra-la" fluid className="workshops-container">
       <WorkshopCard workshop = {workshop1} />
       <WorkshopCard workshop = {workshop2}/>
-      <WorkshopCard workshop = {workshop3}/>
     </Container>
     </div>
   );
