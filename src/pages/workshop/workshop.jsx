@@ -5,9 +5,9 @@ import image from '../../assets/images/workshop-img-girl.png';
 import imageSettings from '../../assets/images/settings-img.png';
 import WorkshopCard from "./components/workshop-card";
 
-import Culinaria1 from '../../assets/images/oficinas/culinaria1.jpg';
-import Culinaria2 from '../../assets/images/oficinas/culinaria2.jpg';
-import Culinaria3 from '../../assets/images/oficinas/culinaria3.jpg';
+import Musica1 from '../../assets/images/oficinas/musica1.jpg';
+import Musica2 from '../../assets/images/oficinas/musica2.jpg';
+import Musica3 from '../../assets/images/oficinas/musica3.jpg';
 
 import Artesanato1 from '../../assets/images/oficinas/artesanato1.jpg';
 import Artesanato2 from '../../assets/images/oficinas/artesanato2.jpg';
@@ -19,7 +19,7 @@ const workshop1 = {
   title: 'Oficina de musicalização e comunicação',
   subtitle: '',
   text: 'Realizada na sala de música, esta oficina utiliza a expressão e os sons musicais na aprendizagem, além de explorar as possibilidades de desenvolvimento da linguagem, da expressão, da comunicação e do potencial criativo',
-  imgs: [Artesanato1, Artesanato2, Artesanato3]
+  imgs: [Musica1, Musica2, Musica3]
 }
 
 const workshop2 = {
