@@ -1,14 +1,20 @@
 import './css/about-us.min.css';
 import AlcioneGolcalvesAlves from '../../assets/pictures/alcione_goncalves_alves.jpg';
+import Alice from '../../assets/pictures/alice.jpg';
 import ClaudianeCoelhoCruz from '../../assets/pictures/claudiane_coelho_cruz.jpg';
 import GessicaSouzaNascimento from '../../assets/pictures/gessica_souza_nascimento.jpg';
+import Gisele from '../../assets/pictures/gisele.jpg';
 import IlmaSantaRitaSantosTeixeira from '../../assets/pictures/ilma_santa_rita_santos_teixeira.png';
 import IzabelaBraga from '../../assets/pictures/izabela_braga.jpeg';
 import JoaoAparecidoAlmeida from '../../assets/pictures/joao_aparecido_almeida.jpg';
 import JulianaMarquenyBrandao from '../../assets/pictures/juliana_marqueny_brandao.jpg';
 import KeliaLuanaGomes from '../../assets/pictures/kelia_luana_gomes.jpeg';
+import Leonilda from '../../assets/pictures/leonilda.jpg';
+import Luiza from '../../assets/pictures/luiza.jpg';
 import MarianyAugustaFigueiredo from '../../assets/pictures/mariany_augusta_figueiredo.jpg';
 import MarleneAparecida from '../../assets/pictures/marlene_aparecida.jpg';
+import Marli from '../../assets/pictures/marli.jpg';
+import MariaGeralda from '../../assets/pictures/maria_geralda.jpg';
 import SaritaDuraes from '../../assets/pictures/sarita_duraes.jpeg';
 import SielyOliveiraAlmeida from '../../assets/pictures/siely_oliveira_almeida.jpg';
 import SolangePereiraMiranda from '../../assets/pictures/solange_pereira_miranda.jpg';
@@ -49,7 +55,7 @@ export default function About (props) {
         {
             name: 'Alice Cristina Rocha dos Santos',
             rightText: 'Educadora Social',
-            img: DefaultFemale
+            img: Alice
         },
         {
             name: 'Alcione Gonçalves Ferreira Alves',
@@ -69,7 +75,7 @@ export default function About (props) {
         {
             name: 'Gizele Maria Magalhães Machado',
             rightText: 'Diretora',
-            img: DefaultFemale
+            img: Gisele
         },
         {
             name: 'Ilma Santa Rita dos Anjos Teixeira',
@@ -99,7 +105,7 @@ export default function About (props) {
         {
             name: 'Leonilda de Oliveira Almeida',
             rightText: 'ASEB',
-            img: DefaultFemale
+            img: Leonilda
         },
         {
             name: 'Lucineia Aparecida da Silva',
@@ -109,12 +115,12 @@ export default function About (props) {
         {
             name: 'Luiza Helena Silva',
             rightText: 'ASEB',
-            img: DefaultFemale
+            img: Luiza
         },
         {
             name: 'Maria Geralda da Rocha Brandão',
             rightText: 'Educadora Social',
-            img: DefaultFemale
+            img: MariaGeralda
         },
         {
             name: 'Mariany Augusta Figueredo',
@@ -129,7 +135,7 @@ export default function About (props) {
         {
             name: 'Marli Aparecida Procópio Alves',
             rightText: 'Monitora',
-            img: DefaultFemale
+            img: Marli
         },
         {
             name: 'Matuzalém Medina Cardoso',
