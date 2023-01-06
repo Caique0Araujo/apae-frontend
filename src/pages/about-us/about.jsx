@@ -16,12 +16,12 @@ import MarianyAugustaFigueiredo from '../../assets/pictures/mariany_augusta_figu
 import MarleneAparecida from '../../assets/pictures/marlene_aparecida.jpg';
 import Marli from '../../assets/pictures/marli.jpg';
 import MariaGeralda from '../../assets/pictures/maria_geralda.jpg';
+import Priscila from '../../assets/pictures/priscila.jpeg';
 import SaritaDuraes from '../../assets/pictures/sarita_duraes.jpeg';
 import SielyOliveiraAlmeida from '../../assets/pictures/siely_oliveira_almeida.jpg';
 import SolangePereiraMiranda from '../../assets/pictures/solange_pereira_miranda.jpg';
 import VitaDiasAlmeidaSantos from '../../assets/pictures/vita_dias_almeida_santos.jpg';
 import Default from '../../assets/pictures/default.png';
-import DefaultFemale from '../../assets/pictures/default_female.png';
 
 function Card (props){
     return(
@@ -151,7 +151,7 @@ export default function About (props) {
         {
             name: 'Priscila Cristina Pinto',
             rightText: 'Assistente Social',
-            img: DefaultFemale
+            img: Priscila
         },
         {
             name: 'Sarita Martins M. Durães Pimenta',
