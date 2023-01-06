@@ -10,6 +10,7 @@ import JoaoAparecidoAlmeida from '../../assets/pictures/joao_aparecido_almeida.j
 import JulianaMarquenyBrandao from '../../assets/pictures/juliana_marqueny_brandao.jpg';
 import KeliaLuanaGomes from '../../assets/pictures/kelia_luana_gomes.jpeg';
 import Leonilda from '../../assets/pictures/leonilda.jpg';
+import LucineiaAparecida from '../../assets/pictures/lucineia_aparecida.jpg';
 import Luiza from '../../assets/pictures/luiza.jpg';
 import MarianyAugustaFigueiredo from '../../assets/pictures/mariany_augusta_figueiredo.jpg';
 import MarleneAparecida from '../../assets/pictures/marlene_aparecida.jpg';
@@ -110,7 +111,7 @@ export default function About (props) {
         {
             name: 'Lucineia Aparecida da Silva',
             rightText: 'Secretária / Tesoureira',
-            img: DefaultFemale
+            img: LucineiaAparecida
         },
         {
             name: 'Luiza Helena Silva',
