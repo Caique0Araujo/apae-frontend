@@ -17,6 +17,7 @@ import MarleneAparecida from '../../assets/pictures/marlene_aparecida.jpg';
 import Marli from '../../assets/pictures/marli.jpg';
 import MariaGeralda from '../../assets/pictures/maria_geralda.jpg';
 import Matuzalem from '../../assets/pictures/matuzalem.jpeg';
+import Paulo from '../../assets/pictures/paulo.jpeg';
 import Priscila from '../../assets/pictures/priscila.jpeg';
 import SaritaDuraes from '../../assets/pictures/sarita_duraes.jpeg';
 import SielyOliveiraAlmeida from '../../assets/pictures/siely_oliveira_almeida.jpg';
@@ -147,7 +148,7 @@ export default function About (props) {
         {
             name: 'Paulo Afonso Correia',
             rightText: 'Aux. Serviço Geral',
-            img: Default
+            img: Paulo
         },
         {
             name: 'Priscila Cristina Pinto',
