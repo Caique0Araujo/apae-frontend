@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ModalContacts from '../../home/components/modal-contacts/modal-contacts';
 import Logo from '../../../../public/logo.png';
-import HomeIcon from '../../../assets/icons/home icon.png'; // mexer
+import HomeIcon from '../../../assets/icons/home_icon.png'; // mexer
 import InfoIcon from '../../../assets/icons/info-icon.png';
 import GearIcon from '../../../assets/icons/gear-icon.png';
 import BazaarIcon from '../../../assets/icons/bazaar-icon.png';
