@@ -3,6 +3,17 @@ import './css/menu-bar-mobile.min.css'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ModalContacts from '../../home/components/modal-contacts/modal-contacts';
+import Logo from '../../../../public/logo.png';
+import HomeIcon from '../../../assets/icons/home icon.png'; // mexer
+import InfoIcon from '../../../assets/icons/info-icon.png';
+import GearIcon from '../../../assets/icons/gear-icon.png';
+import BazaarIcon from '../../../assets/icons/bazaar-icon.png';
+import SectionIcon from '../../../assets/icons/section-icon.png';
+import PeopleIcon from '../../../assets/icons/people-icon.png';
+
+/*
+                                    <Link className='link' to={'/about-us'}><li> <img src="src\assets\icons\people-icon.png" alt="" /> <h6 href="">Quem somos</h6></li></Link>
+*/
 
 function MenuBarComponent() {
 
@@ -38,7 +49,7 @@ function MenuBarComponent() {
                     onHide={closeModal}
                  />
                 <div>
-                    <img src="src\assets\images\LOGO-APAE-BRASIL-01.png" alt="" />
+                    <img src={Logo} alt="" />
                     <h4>APAE</h4>
                 </div>
                 <ul>
@@ -93,7 +104,7 @@ function MenuBarComponent() {
                         <div className='open-drawer-main-box'>
                             <div >
                                 <li>
-                                    <img src="src\assets\images\LOGO-APAE-BRASIL-01.png" alt="" />
+                                    <img src={Logo} alt="" />
                                     <h4>Apae SJE</h4>
                                 </li>
                                 
@@ -101,13 +112,13 @@ function MenuBarComponent() {
 
                             <div>
                                 <ul>
-                                    <Link className='link' to={'/'}><li> <img src="src\assets\icons\home icon.png" alt="" /> <h6 href="">Início</h6></li></Link>
-                                    <Link className='link' to={'/saiba-mais'}> <li><img src="src\assets\icons\info-icon.png" alt="" /> <h6 href="">Saiba mais</h6></li></Link>
-                                    <Link className='link' to={'/oficinas'}> <li><img src="src\assets\icons\gear-icon.png" alt="" /> <h6 href="">Oficinas</h6></li></Link>
+                                    <Link className='link' to={'/'}><li> <img src={HomeIcon} alt="" /> <h6 href="">Início</h6></li></Link>
+                                    <Link className='link' to={'/saiba-mais'}> <li><img src={InfoIcon} alt="" /> <h6 href="">Saiba mais</h6></li></Link>
+                                    <Link className='link' to={'/oficinas'}> <li><img src={GearIcon} alt="" /> <h6 href="">Oficinas</h6></li></Link>
                                     
-                                    <Link className='link' to={'/bazar'}><li> <img src="src\assets\icons\bazaar-icon.png" alt="" /> <h6 href="">Bazar</h6></li></Link>
+                                    <Link className='link' to={'/bazar'}><li> <img src={BazaarIcon} alt="" /> <h6 href="">Bazar</h6></li></Link>
                                     <li className='dropdown'> 
-                                        <img src="src\assets\icons\section-icon.png" alt="" /> <h6 href="">Setores</h6>
+                                        <img src={SectionIcon} alt="" /> <h6 href="">Setores</h6>
                                         <div className='dropdown-content'>
                                             <Link to={'/administrativo'} className='dropdown-itens'>Administrativo</Link>
                                             <Link to={'/educacao'} className='dropdown-itens'>Educação</Link>
@@ -117,7 +128,7 @@ function MenuBarComponent() {
                                         </div>
                                     </li>
                                     
-                                    <Link className='link' to={'/about-us'}><li> <img src="src\assets\icons\people-icon.png" alt="" /> <h6 href="">Quem somos</h6></li></Link>
+                                    <Link className='link' to={'/about-us'}><li> <img src={PeopleIcon} alt="" /> <h6 href="">Quem somos</h6></li></Link>
                                 </ul>
                             </div>
 

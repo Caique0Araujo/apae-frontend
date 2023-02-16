@@ -1,9 +1,11 @@
-import './css/footer.min.css'
+import './css/footer.min.css';
+import Logo from '../../../../public/logo.png';
+
 export default function FooterBaseComponent() {
     return (
         <footer>
             <div>
-                <img src="src\assets\images\LOGO-APAE-BRASIL-01.png" alt="" />
+                <img src={Logo} alt="" />
                 <article>
                     <h3>APAE - SJE 2022</h3>
                     <h6>Administração 20xx - 20xx</h6>

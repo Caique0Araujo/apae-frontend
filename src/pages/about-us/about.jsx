@@ -24,6 +24,7 @@ import SielyOliveiraAlmeida from '../../assets/pictures/siely_oliveira_almeida.j
 import SolangePereiraMiranda from '../../assets/pictures/solange_pereira_miranda.jpg';
 import VitaDiasAlmeidaSantos from '../../assets/pictures/vita_dias_almeida_santos.jpg';
 import Default from '../../assets/pictures/default.png';
+import HandIcon from  '../../assets/icons/hand-icon.png';
 
 function Card (props){
     return(
@@ -188,7 +189,7 @@ export default function About (props) {
                 </section>
 
                 <section>
-                    <img src="src\assets\icons\hand-icon.png" alt="" />
+                    <img src={HandIcon} alt="" />
                 </section>
             </div>
 

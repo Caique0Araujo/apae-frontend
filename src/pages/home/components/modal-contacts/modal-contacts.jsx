@@ -1,6 +1,8 @@
 import Modal from 'react-bootstrap/Modal';
 import './css/modal-contacts.min.css'
 import Button from 'react-bootstrap/Button';
+import Pana from '../../../../assets/images/pana.png';
+
 export default function ModalContacts(props){
     return(
         <Modal
@@ -19,7 +21,7 @@ export default function ModalContacts(props){
         <Modal.Body>
           <section className='modal-main-box'>
             <div className='img-box'>
-                <img src="src\assets\images\pana.png" alt="" />
+                <img src={Pana} alt="" />
             </div>
   
             <div>
