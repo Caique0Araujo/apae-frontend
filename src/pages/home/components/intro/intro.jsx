@@ -3,7 +3,8 @@ import '../css/intro.min.css'
 import '../../../../css/DefaultStyle.min.css';
 import ButtonComponent from "../../../components/button-component/button-component";
 import { Link } from 'react-router-dom';
-import Info from '../../../info/info';
+import Logo from '../../../../../public/logo.png';
+
 export default function Intro(){
     return(
         <nav className='main-box-intro'>
@@ -16,7 +17,7 @@ export default function Intro(){
             </div>
 
             <div>
-                <img src="src\assets\images\LOGO-APAE-BRASIL-01.png" alt="" />
+                <img src={Logo} alt="" />
             </div>
         </nav>
     )
