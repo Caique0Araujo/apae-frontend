@@ -22,7 +22,7 @@ export default function Posts(){
 
         try {
             setLoading(true)
-            const _news = await getMostRecentNews(news.length, 5);
+            const _news = await getMostRecentNews();
             setNews(_news);
             setLoading(false)
         } catch {
