@@ -8,7 +8,7 @@ export default function FooterBaseComponent() {
                 <img src={Logo} alt="" />
                 <article>
                     <h3>APAE - SJE 2022</h3>
-                    <h6>Administração 20xx - 20xx</h6>
+                    <h6>Administração 2022 - 2023</h6>
                 </article>
                 
             </div>
