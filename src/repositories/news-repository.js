@@ -1,7 +1,7 @@
 import { API_URL } from '../../settings.js';
 
 export async function getMostRecentNews() {
-    const result = await fetch(`${API_URL}/news/recents}`);
+    const result = await fetch(`${API_URL}/news/getAll`);
     if (result.status != 200) {
         return [];
     }
