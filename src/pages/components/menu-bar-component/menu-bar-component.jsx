@@ -146,7 +146,7 @@ function MenuBarComponent() {
 }
 
 <div className='drawer'>
-<button
+<button 
     onClick={() => {
         setClick(true)
     }}
