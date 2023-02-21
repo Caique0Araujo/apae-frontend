@@ -13,7 +13,7 @@ export default function Posts() {
   const color = "#74B05C";
 
   const [currentPage, setCurrentPage] = useState(0);
-  const newsPerPage = 2;
+  const newsPerPage = 7;
   const pages = Math.ceil(news.length / newsPerPage);
   const startIndex = currentPage * newsPerPage;
   const endIndex = startIndex + newsPerPage;
